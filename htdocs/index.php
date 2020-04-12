@@ -38,6 +38,8 @@
         left: 50%;
     }
     #logo {
+        position: relative;
+        z-index: 10;
         width: 300px;
         height: 300px;
         margin: -150px 0 0 -150px;
@@ -47,8 +49,17 @@
         -o-animation: pulse 3s 1;
         animation: pulse 3s 1;
     }
-    
+    #copyright {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Avenir, sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+    }
 </style>
 <svg class="center" id="logo" xmlns="http://www.w3.org/2000/svg" width="642" height="642" viewBox="0 0 642 642"><path d="M342.41,235.76H410C410,451.7,226,628.35.52,628.35V569.46c170.13,0,313.49-117.76,342.6-275h-29.6a319.77,319.77,0,0,0-20.07,111.76H231.94c0-215.94,184-392.59,409.54-392.59V72.54C515.5,72.54,403.53,137.71,342.41,235.76Z"/></svg>
+<p id="copyright">&copy; James Rampton <?php echo date("Y"); ?></p>
 </body>
 </html>
