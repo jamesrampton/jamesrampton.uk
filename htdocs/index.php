@@ -58,5 +58,19 @@
 </style>
 <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="642" height="642" viewBox="0 0 642 642"><path d="M342.41,235.76H410C410,451.7,226,628.35.52,628.35V569.46c170.13,0,313.49-117.76,342.6-275h-29.6a319.77,319.77,0,0,0-20.07,111.76H231.94c0-215.94,184-392.59,409.54-392.59V72.54C515.5,72.54,403.53,137.71,342.41,235.76Z"/></svg>
 <p id="copyright">&copy; James Rampton <?php echo date("Y"); ?></p>
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+    (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '5e939a2904a0840390b73326');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
 </body>
 </html>
