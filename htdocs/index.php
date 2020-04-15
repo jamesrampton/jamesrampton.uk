@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <title>James Rampton</title>
 </head>
 <body>
@@ -31,6 +32,8 @@
         height: 100%;
         margin: 0;
         position: relative;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 100%;
     }
     #logo {
         position: absolute;
@@ -51,8 +54,6 @@
         bottom: 0;
         width: 100%;
         text-align: center;
-        font-family: Avenir, sans-serif;
-        font-size: 12px;
         color: #bbbbbb;
     }
 </style>
