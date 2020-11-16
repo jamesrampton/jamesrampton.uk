@@ -41,9 +41,9 @@
         top: calc(50% - 90px);
         left: 50%;
         z-index: 10;
-        width: 300px;
-        height: 300px;
-        margin: -150px 0 0 -150px;
+        width: 250px;
+        height: 250px;
+        margin: -125px 0 0 -125px;
         fill: #333333;
         //-webkit-animation: pulse 3s 1;
         //-moz-animation: pulse 3s 1;
@@ -51,8 +51,8 @@
         //animation: pulse 3s 1;
     }
     #logo {
-    	width: 300px;
-	height: 300px;
+    	width: 250px;
+	height: 250px;
     }
     #social {
 	text-align: center;
