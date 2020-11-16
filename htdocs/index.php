@@ -44,10 +44,10 @@
         height: 300px;
         margin: -150px 0 0 -150px;
         fill: #292929;
-        -webkit-animation: pulse 3s 1;
-        -moz-animation: pulse 3s 1;
-        -o-animation: pulse 3s 1;
-        animation: pulse 3s 1;
+        //-webkit-animation: pulse 3s 1;
+        //-moz-animation: pulse 3s 1;
+        //-o-animation: pulse 3s 1;
+        //animation: pulse 3s 1;
     }
     #copyright {
         position: absolute;
