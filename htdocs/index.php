@@ -10,22 +10,6 @@
 </head>
 <body>
 <style>
-    @-webkit-keyframes pulse {
-        0%, 100% { fill: #292929; }
-        50% { fill: #595959; width: 340px; height: 340px; margin: -170px 0 0 -170px; }
-    }
-    @-moz-keyframes pulse {
-        0%, 100% { fill: #292929; }
-        50% { fill: #595959; width: 340px; height: 340px; margin: -170px 0 0 -170px; }
-    }
-    @-o-keyframes pulse {
-        0%, 100% { fill: #292929; }
-        50% { fill: #595959; width: 340px; height: 340px; margin: -170px 0 0 -170px; }
-    }
-    @keyframes pulse {
-        0%, 100% { fill: #292929; }
-        50% { fill: #595959; width: 340px; height: 340px; margin: -170px 0 0 -170px; }
-    }
     body, html {
         background: #e2e1dc;
         background-repeat: repeat;
@@ -45,25 +29,21 @@
         height: 250px;
         margin: -125px 0 0 -125px;
         fill: #333333;
-        //-webkit-animation: pulse 3s 1;
-        //-moz-animation: pulse 3s 1;
-        //-o-animation: pulse 3s 1;
-        //animation: pulse 3s 1;
     }
     #logo {
-    	width: 250px;
-	height: 250px;
+        width: 250px;
+        height: 250px;
     }
     #social {
-	text-align: center;
-	margin-top: 50px;
-	font-size: 40px;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
     }
     .social-link, .social-link:visited {
-	padding: 15px;
-	color: #333333;
-	text-decoration: none;
-	display: inine-block;
+        padding: 15px;
+        color: #333333;
+        text-decoration: none;
+        display: inine-block;
     }
     #copyright {
         position: absolute;
