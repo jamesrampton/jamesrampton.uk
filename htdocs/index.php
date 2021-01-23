@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
+
+    <!-- favicons -->
+    <link rel="icon" href="img/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="img/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="img/favicon-192.png" sizes="192x192">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href="img/favicon-196.png">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="img/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favicon-180.png" sizes="180x180">
+    <!-- macOS -->
     <link rel="mask-icon" href="img/pinned_icon.svg?v=2" color="#333333">
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" sizes="32x32">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ea942b1dc0.js" crossorigin="anonymous"></script>
     <title>James Rampton</title>
