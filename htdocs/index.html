@@ -74,6 +74,9 @@
 <a class="social-link" href="https://jamesrampton.bandcamp.com"><i class="fa fa-bandcamp"></i></a>
 </div>
 </div>
-<p id="copyright">&copy; James Rampton 2021</p>
+<p id="copyright">&copy; James Rampton <span id="year"></span></p>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>
