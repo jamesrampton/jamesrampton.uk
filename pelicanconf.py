@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'James Rampton'
 SITENAME = 'James Rampton'
 SITEURL = ''
+THEME = "themes/default"
 
 PATH = 'content'
 

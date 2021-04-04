@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
 
     <!-- favicons -->
-    <link rel="icon" href="img/favicon-32.png" sizes="32x32">
-    <link rel="icon" href="img/favicon-128.png" sizes="128x128">
-    <link rel="icon" href="img/favicon-192.png" sizes="192x192">
+    <link rel="icon" href="/theme/img/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="/theme/img/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/theme/img/favicon-192.png" sizes="192x192">
 
     <!-- Android -->
-    <link rel="shortcut icon" sizes="196x196" href="img/favicon-196.png">
+    <link rel="shortcut icon" sizes="196x196" href="/theme/img/favicon-196.png">
 
     <!-- iOS -->
-    <link rel="apple-touch-icon" href="img/favicon-152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="img/favicon-180.png" sizes="180x180">
+    <link rel="apple-touch-icon" href="/theme/img/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/theme/img/favicon-180.png" sizes="180x180">
     <!-- macOS -->
-    <link rel="mask-icon" href="img/pinned_icon.svg?v=2" color="#333333">
+    <link rel="mask-icon" href="/theme/img/pinned_icon.svg?v=2" color="#333333">
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ea942b1dc0.js" crossorigin="anonymous"></script>
-    <title>James Rampton</title>
+    <title>{{ SITENAME }}</title>
     <style>
         body, html {
             background: #e2e1dc;
@@ -67,17 +67,9 @@
 </head>
 <body>
 <div id="wrapper">
-    <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="642" height="642" viewBox="0 0 642 642"><path d="M342.41,235.76H410C410,451.7,226,628.35.52,628.35V569.46c170.13,0,313.49-117.76,342.6-275h-29.6a319.77,319.77,0,0,0-20.07,111.76H231.94c0-215.94,184-392.59,409.54-392.59V72.54C515.5,72.54,403.53,137.71,342.41,235.76Z"/></svg>
-    <div class="social">
-        <a class="social-link" href="https://vimeo.com/jamesrampton"><i class="fa fa-vimeo"></i></a>
-        <a class="social-link" href="https://soundcloud.com/jamesrampton"><i class="fa fa-soundcloud"></i></a>
-    </div>
-    <div class="social">
-        <a class="social-link" href="https://jamesrampton.bandcamp.com"><i class="fa fa-bandcamp"></i></a>
-        <a class="social-link" href="https://github.com/jamesrampton"><i class="fa fa-github"></i></a>
-    </div>
+    {% block content %}{% endblock %}
 </div>
-<p id="copyright">&copy; James Rampton <span id="year"></span></p>
+<p id="copyright">&copy; {{ AUTHOR }} <span id="year"></span></p>
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
