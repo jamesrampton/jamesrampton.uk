@@ -12,6 +12,7 @@ TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
+OUTPUT_DIRECTORY = 'htdocs'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Feed generation is usually not desired when developing
