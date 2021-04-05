@@ -9,7 +9,7 @@ static_sites:
 - cors: {}
   environment_slug: html
   github:
-    branch: main
+    branch: gh-pages
     deploy_on_push: true
     repo: jamesrampton/jamesrampton_web
   name: jamesrampton-web
