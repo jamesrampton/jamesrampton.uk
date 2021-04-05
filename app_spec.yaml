@@ -15,4 +15,3 @@ static_sites:
   name: jamesrampton-web
   routes:
   - path: /
-  source_dir: htdocs
