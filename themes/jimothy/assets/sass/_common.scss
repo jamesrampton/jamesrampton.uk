@@ -1,7 +1,6 @@
 body, html {
     background: #e2e1dc;
-    margin: 0;
-    font-size: 100%;
+    font-size: 20px;
     font-family: 'KoHo', sans-serif;
     color: #333333;
 }
@@ -21,8 +20,7 @@ a, a:visited {
     text-decoration: none;
     border-bottom: 2px solid #1565C0;
     color: #333333;
-    //color: #1565C0;
-    transition: border-bottom-width 0.3s ease;
+    transition: border-bottom-width 0.1s linear;
     padding-bottom: 1px;
 }
 
