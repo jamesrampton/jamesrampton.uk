@@ -1,0 +1,8 @@
+{{ define "main" }}
+    {{ if .Site.Params.avatar }}<img id="logo" alt="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}">{{ end }}
+    <div class="social">
+        {{ if .Site.Params.vimeoLink }}<a class="social-link" href="{{ .Site.Params.vimeoLink }}"><i class="fa fa-vimeo"></i></a>{{ end }}
+        {{ if .Site.Params.soundcloudLink }}<a class="social-link" href="{{ .Site.Params.soundcloudLink }}"><i class="fa fa-soundcloud"></i></a>{{ end }}
+        {{ if .Site.Params.bandcampLink }}<a class="social-link" href="{{ .Site.Params.bandcampLink }}"><i class="fa fa-bandcamp"></i></a>{{ end }}
+    </div>
+{{ end }}

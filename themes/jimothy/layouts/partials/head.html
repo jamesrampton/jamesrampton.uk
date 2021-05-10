@@ -1,0 +1,31 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicons -->
+    <link rel="icon" href="/images/favicon/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="/images/favicon/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/images/favicon/favicon-192.png" sizes="192x192">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href="/images/favicon/favicon-196.png">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="/images/favicon/favicon-152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/images/favicon/favicon-180.png" sizes="180x180">
+    <!-- macOS -->
+    <link rel="mask-icon" href="/images/favicon/pinned_icon.svg" color="#333333">
+
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+
+    {{ $sass := resources.Get "sass/main.scss" }}
+    {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
+    {{ $style := $sass | resources.ToCSS $options | resources.Fingerprint }}
+    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+
+    <script src="https://kit.fontawesome.com/{{ .Site.Params.fontawesomeKey }}.js" crossorigin="anonymous"></script>
+
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+</head>
