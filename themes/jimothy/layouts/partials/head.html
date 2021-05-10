@@ -16,7 +16,8 @@
     <!-- macOS -->
     <link rel="mask-icon" href="/images/favicon/pinned_icon.svg" color="#333333">
 
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Kanit:wght@700&family=KoHo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     {{ $sass := resources.Get "sass/main.scss" }}
     {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}

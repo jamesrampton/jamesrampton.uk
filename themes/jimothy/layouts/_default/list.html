@@ -2,9 +2,7 @@
 <h1>{{ .Title }}</h1>
 {{ range .Pages.ByPublishDate.Reverse }}
 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-{{ partial "metadata.html" . }}
-<a href="{{ .RelPermalink }}">
-    <p>{{ .Summary }}</p>
-</a>
+<p class="meta">{{ partial "metadata.html" . }}</p>
+<p>{{ .Summary }}</p>
 {{ end }}
 {{ end }}
