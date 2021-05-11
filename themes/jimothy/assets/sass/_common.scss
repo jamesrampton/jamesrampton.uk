@@ -1,12 +1,12 @@
 body, html {
     background: #e2e1dc;
     font-size: 20px;
-    font-family: 'KoHo', sans-serif;
+    font-family: -apple-system, system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #333333;
 }
 
 @include headings {
-    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
 }
 
 h1 {
@@ -57,5 +57,5 @@ a:hover {
     width: 100%;
     text-align: center;
     color: #bbbbbb;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 0.75em;
 }
