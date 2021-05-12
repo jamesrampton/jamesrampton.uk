@@ -6,6 +6,9 @@ theme = "jimothy"
     avatar = "images/logo.svg"
     page_not_found_image = "images/broken_logo.svg"
     fontawesomeKey = "ea942b1dc0"
-    vimeoLink = "https://vimeo.com/jamesrampton"
-    soundcloudLink = "https://soundcloud.com/jamesrampton"
-    bandcampLink = "https://jamesrampton.bandcamp.com"
+[params.social]
+    networks = [
+        ["vimeo", "//vimeo.com/jamesrampton"],
+        ["soundcloud", "//soundcloud.com/jamesrampton"],
+        ["bandcamp", "//jamesrampton.bandcamp.com"]
+    ]
