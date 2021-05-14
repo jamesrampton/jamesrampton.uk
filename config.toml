@@ -6,7 +6,6 @@ theme = "jimothy"
 [params]
     avatar = "images/logo.svg"
     page_not_found_image = "images/broken_logo.svg"
-    fontawesomeKey = "ea942b1dc0"
 
 [[params.social]]
     name = "Vimeo"
