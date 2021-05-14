@@ -1,10 +1,18 @@
 {{ define "main" }}
     {{ if isset .Site.Params "avatar" }}<img id="logo" alt="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}">{{ end }}
-    {{ if isset .Site.Params.social "networks" }}
-        <div class="social">
-            {{ range .Site.Params.social.networks }}
-                <a class="social-link" href="{{ index . 1 }}"><i class="fa fa-{{ index . 0 }}"></i></a>
+    {{ with .Site.Params.social }}
+        <ul class="social">
+            {{ range sort . "order" }}
+                <li class="social-link" >
+                    {{ if .icon }}
+                        <a href="{{ .url }}">
+                            <i class="fa fa-{{ .icon }}" aria-hidden="true"></i>
+                        </a>
+                    {{ else }}
+                        <a href="{{ .url }}">{{ .name }}</a>
+                    {{ end }}
+                </li>
             {{ end }}
-        </div>
+        </ul>
     {{ end }}
 {{ end }}

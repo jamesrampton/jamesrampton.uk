@@ -2,13 +2,26 @@ baseURL = "https://www.jamesrampton.uk/"
 languageCode = "en-us"
 title = "James Rampton"
 theme = "jimothy"
+
 [params]
     avatar = "images/logo.svg"
     page_not_found_image = "images/broken_logo.svg"
     fontawesomeKey = "ea942b1dc0"
-[params.social]
-    networks = [
-        ["vimeo", "//vimeo.com/jamesrampton"],
-        ["soundcloud", "//soundcloud.com/jamesrampton"],
-        ["bandcamp", "//jamesrampton.bandcamp.com"]
-    ]
+
+[[params.social]]
+    name = "Vimeo"
+    icon = "vimeo"
+    order = 1
+    url = "//vimeo.com/jamesrampton"
+
+[[params.social]]
+    name = "Soundcloud"
+    icon = "soundcloud"
+    order = 2
+    url = "//soundcloud.com/jamesrampton"
+
+[[params.social]]
+    name = "Bandcamp"
+    icon = "bandcamp"
+    order = 3
+    url = "//jamesrampton.bandcamp.com"
