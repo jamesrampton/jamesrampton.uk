@@ -4,8 +4,8 @@ title = "James Rampton"
 theme = "jimothy"
 
 [params]
-    avatar = "images/logo.svg"
-    page_not_found_image = "images/broken_logo.svg"
+    avatar = "images/logo.svg?v=2"
+    page_not_found_image = "images/broken_logo.svg?v=2"
 
 [[params.social]]
     name = "Vimeo"
