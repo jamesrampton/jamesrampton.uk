@@ -2,11 +2,11 @@
 <html lang="en">
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        <div id="wrapper">
-            {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
+            {{- partial "header.html" . -}}
+            <article class="main-article">
+                {{- block "main" . }}{{- end }}
+            </article>
+            {{- partial "footer.html" . -}}
         {{- partial "script.html" . -}}
     </body>
 </html>
