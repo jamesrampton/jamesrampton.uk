@@ -6,7 +6,7 @@ theme = "jimothy"
 [markup]
     [markup.highlight]
         linenos = true
-        style = "solarized-dark"
+        style = "solarized-light"
 
 [params]
     avatar = "images/logo.svg?v=2"
