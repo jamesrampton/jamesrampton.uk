@@ -5,8 +5,6 @@ theme = "jimothy"
 
 [markup]
     [markup.highlight]
-        linenos = true
-        style = "solarized-light"
         noClasses = false
 
 [params]
