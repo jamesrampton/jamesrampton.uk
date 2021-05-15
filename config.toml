@@ -3,6 +3,11 @@ languageCode = "en-us"
 title = "James Rampton"
 theme = "jimothy"
 
+[markup]
+    [markup.highlight]
+        linenos = true
+        style = "solarized-dark"
+
 [params]
     avatar = "images/logo.svg?v=2"
     page_not_found_image = "images/broken_logo.svg?v=2"
