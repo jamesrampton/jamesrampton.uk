@@ -24,7 +24,7 @@ Maecenas faucibus **mollis** interdum. Donec ullamcorper nulla non metus auctor 
 
 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
-```python
+```python {hl_lines=[5]}
 class CachedDnsName(object):
     def __str__(self):
         return self.get_fqdn()
