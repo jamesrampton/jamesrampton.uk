@@ -35,6 +35,12 @@ img {
     height: auto;
 }
 
+pre {
+    border-radius: 15px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
 strong {
     font-weight: 700;
 }
