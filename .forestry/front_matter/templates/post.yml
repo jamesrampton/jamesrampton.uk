@@ -4,16 +4,25 @@ hide_body: false
 fields:
 - type: text
   name: author
-  label: author
+  label: Author
+  default: James Rampton
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Date
+  default: now
+  config:
+    required: true
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: text
   name: description
-  label: description
+  label: Description
+  description: The test that will display in the &lt;meta&gt; description for SEO
 - name: featured_image
   type: file
   config:
