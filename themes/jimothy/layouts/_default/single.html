@@ -1,6 +1,6 @@
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
     {{ partial "metadata.html" . }}
-    <p><img src="{{ .Params.featured_image }}" alt="{{ .Title }}"></p>
+    <p><img src="{{ .Params.featured_image }}" alt="{{ .Params.featured_image_alt_text }}"></p>
     {{ .Content }}
 {{ end }}
