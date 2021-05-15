@@ -29,5 +29,10 @@ fields:
     maxSize: 64
   label: Featured Image
   description: The image that will be displayed in the post and in lister pages
+- name: featured_image_alt_text
+  type: text
+  config:
+    required: false
+  label: Featured image alt text
 pages:
 - content/posts/hello-world.md
