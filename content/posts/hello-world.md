@@ -3,8 +3,8 @@ author = "James Rampton"
 date = 2021-05-10T17:11:41Z
 description = "A test post with some common elements"
 draft = true
-featured_image = "/uploads/kitten_and_puppy.jpg"
-featured_image_alt_text = "A kitten and puppy sleeping next to each other"
+featured_image = "/uploads/stags.jpg"
+featured_image_alt_text = "Stags resting in the woods"
 title = "Hello, world!"
 
 +++
