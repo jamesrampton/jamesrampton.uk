@@ -1,0 +1,24 @@
+domains:
+- domain: jamesrampton.uk
+  type: PRIMARY
+- domain: www.jamesrampton.uk
+  type: ALIAS
+name: jamesrampton-web
+region: ams
+static_sites:
+- build_command: hugo -d public
+  environment_slug: hugo
+  envs:
+  - key: HUGO_EXTENDED
+    scope: BUILD_TIME
+    value: "1"
+  - key: HUGO_VERSION
+    scope: BUILD_TIME
+    value: 0.85.0
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: jamesrampton/jamesrampton_web
+  name: jamesrampton-web
+  routes:
+  - path: /
