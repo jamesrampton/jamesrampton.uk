@@ -7,6 +7,9 @@ theme = "jimothy"
     [markup.highlight]
         noClasses = false
 
+[imaging.exif]
+includeFields = ".*"
+
 [params]
     avatar = "images/logo.svg?v=2"
     page_not_found_image = "images/broken_logo.svg?v=2"
