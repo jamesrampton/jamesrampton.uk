@@ -4,6 +4,8 @@
     {{ if or .Params.description .Site.Params.description }}
     <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else if .Site.Params.description }}{{ .Site.Params.description }}{{ end }}"/>
     {{ end }}
+    {{- block "extrahead" . }}{{- end }}
+
     <!-- favicons -->
     <link rel="icon" href="/images/favicon/favicon-32.png" sizes="32x32">
     <link rel="icon" href="/images/favicon/favicon-128.png" sizes="128x128">

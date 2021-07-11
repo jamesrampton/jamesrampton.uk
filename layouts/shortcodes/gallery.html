@@ -1,0 +1,28 @@
+{{ define "extrahead" }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+{{ end }}
+<section class="gallery">
+    {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
+    {{ range $index, $image := $images }}
+        {{ $thumbnail := $image.Resize "300x300 q100" }}
+        <a class="glightbox" href="{{ .Permalink }}" data-glightbox="title: {{ .Title }}; description: .custom-desc{{ $index }}">
+            <img src="{{ $thumbnail.Permalink }}">
+        </a>
+    {{ end }}
+</section>
+
+{{ range $index, $image := $images }}
+    {{ with .Exif.Tags }}
+
+    <div class="glightbox-desc custom-desc{{ $index }}">
+        {{ with .Model }}{{ . }}{{ end }}{{ with .LensModel }} &sdot; {{ . }}{{ end }}{{ with .FNumber }}<br> ƒ/{{ . }}{{ end }}{{ with .FocalLength }} &sdot; {{ . }}mm{{ end }}{{ with .ExposureTime }} &sdot; {{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
+    </div>
+{{ end }}
+{{ end }}
+
+<script>
+    var lightbox = GLightbox({
+        loop: true
+    });
+</script>

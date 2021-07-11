@@ -59,7 +59,8 @@ blockquote {
 
 .main-article {
     padding: 15px;
-    max-width: 800px;
+    //max-width: 800px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -92,10 +93,16 @@ blockquote {
     font-weight: 100;
 }
 
+.gallery, #lightbox {
+    a {
+        border: none;
+    }
+}
+
 #copyright {
     width: 100%;
     text-align: center;
-    color: #BBB;
+    //color: #BBB;
     font-size: 0.75em;
     font-weight: 100;
 }
