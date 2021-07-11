@@ -3,9 +3,13 @@
     {{- partial "head.html" . -}}
     <body>
             {{- partial "header.html" . -}}
-            <article class="main-article">
-                {{- block "main" . }}{{- end }}
-            </article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        {{- block "main" . }}{{- end }}
+                    </div>
+                </div>
+            </div>
             {{- partial "footer.html" . -}}
         {{- partial "script.html" . -}}
     </body>
