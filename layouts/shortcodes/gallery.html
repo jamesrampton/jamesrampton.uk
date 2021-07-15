@@ -5,7 +5,7 @@
 <section class="gallery">
     {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
     {{ range $index, $image := $images }}
-        {{ $thumbnail := $image.Resize "300x300 q100" }}
+        {{ $thumbnail := $image.Fill "300x300 q100" }}
         <a class="glightbox" href="{{ .Permalink }}" data-glightbox="title: {{ .Title }}; description: .custom-desc{{ $index }}">
             <img src="{{ $thumbnail.Permalink }}">
         </a>
