@@ -16,7 +16,11 @@
     {{ with .Exif.Tags }}
 
     <div class="glightbox-desc custom-desc{{ $index }}">
-        {{ with .Model }}{{ . }}{{ end }}{{ with .LensModel }} &sdot; {{ . }}{{ end }}{{ with .FNumber }}<br> ƒ/{{ . }}{{ end }}{{ with .FocalLength }} &sdot; {{ . }}mm{{ end }}{{ with .ExposureTime }} &sdot; {{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
+        {{ if .LensModel }}
+            {{ with .Model }}{{ . }}{{ end }}{{ with .LensModel }} &sdot; {{ . }}{{ end }}{{ with .FNumber }}<br> ƒ/{{ . }}{{ end }}{{ with .FocalLength }} &sdot; {{ . }}mm{{ end }}{{ with .ExposureTime }} &sdot; {{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
+        {{ else }}
+            {{ with .Model }}{{ . }}{{ end }}{{ with .ExposureTime }}<br>{{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
+        {{ end }}
     </div>
 {{ end }}
 {{ end }}
