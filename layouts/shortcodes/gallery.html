@@ -1,18 +1,15 @@
 {{ define "extrahead" }}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 {{ end }}
 <section class="gallery">
     {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
     {{ range $index, $image := $images }}
         {{ $thumbnail := $image.Fill "300x300 q100" }}
-        <a class="glightbox" href="{{ .Permalink }}" data-glightbox="title: {{ .Title }}; description: .custom-desc{{ $index }}">
+        <a class="gallery-thumb" href="{{ .Permalink }}" data-glightbox="title: {{ .Title }}; description: .custom-desc{{ $index }}">
             <img src="{{ $thumbnail.Permalink }}">
         </a>
     {{ end }}
 </section>
-
-{{ range $index, $image := $images }}
+{{- /* {{ range $index, $image := $images }}
     {{ with .Exif.Tags }}
 
     <div class="glightbox-desc custom-desc{{ $index }}">
@@ -23,12 +20,22 @@
         {{ end }}
     </div>
 {{ end }}
-{{ end }}
-
+{{ end }} */ -}}
 <script>
-    var lightbox = GLightbox({
-        loop: true,
-        zoomable: false,
-        moreLength: 0
+    document.body.innerHTML += '<div id="gallery-container" class="gallery-container"></div>';
+    var container = document.getElementById('gallery-container');
+    container.addEventListener('click', function(){
+        this.classList.remove("active");
+        document.body.style.overflow = "initial";
     });
+    var thumbs = document.getElementsByClassName('gallery-thumb');
+    for (var i = 0; i < thumbs.length; i++) {
+        console.log(thumbs[i])
+        thumbs[i].addEventListener('click', function(event){
+            event.preventDefault();
+            container.style.backgroundImage = "url("+ this.getAttribute('href') + ")";
+            container.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+    }
 </script>

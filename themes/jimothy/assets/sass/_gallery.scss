@@ -1,0 +1,60 @@
+.gallery {
+  text-align: center;
+}
+
+.gallery-thumb {
+  &:hover {
+    cursor: zoom-in;
+  }
+}
+
+
+#gallery-container {
+  display: table-cell;
+  visibility: hidden;
+  vertical-align: middle;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  position: fixed;
+  top:0;
+  right:0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  opacity: 0;
+  transition: visibility 600ms, opacity 600ms;
+  &:hover {
+    cursor: zoom-out;
+  }
+}
+
+#gallery-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+// Legacy styles for reference
+.glightbox-clean {
+  .gslide-title, .gslide-desc {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #555;
+    font-weight: 300;
+  }
+  .gslide-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+  .gslide-desc {
+    font-size: 0.7em;
+    color: #BBB;
+  }
+}
