@@ -14,7 +14,7 @@
   visibility: hidden;
   vertical-align: middle;
   text-align: center;
-  background-color: black;
+  background-color: white;
   position: fixed;
   top:0;
   right:0;
@@ -40,11 +40,12 @@
   margin-right: 0.5em;
   width: 1em;
   height: 1em;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+  color: #555;
   position: absolute;
   top: 0;
   right: 0;
+  line-height: 1em;
+  border-radius: 2px;
 }
 
 #image-wrapper {
