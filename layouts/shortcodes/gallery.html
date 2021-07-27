@@ -22,8 +22,9 @@
 {{ end }}
 {{ end }} */ -}}
 <script>
-    document.body.innerHTML += '<div id="gallery-container" class="gallery-container"></div>';
+    document.body.innerHTML += '<div id="gallery-container" class="gallery-container"><div class="gallery-close">&times;</div><div id="image-wrapper"></div></div>';
     var container = document.getElementById('gallery-container');
+    var imageWrapper = document.getElementById('image-wrapper');
     container.addEventListener('click', function(){
         this.classList.remove("active");
         document.body.style.overflow = "initial";
@@ -33,7 +34,7 @@
         console.log(thumbs[i])
         thumbs[i].addEventListener('click', function(event){
             event.preventDefault();
-            container.style.backgroundImage = "url("+ this.getAttribute('href') + ")";
+            imageWrapper.style.backgroundImage = "url("+ this.getAttribute('href') + ")";
             container.classList.add("active");
             document.body.style.overflow = "hidden";
         });
