@@ -9,18 +9,6 @@
         </a>
     {{ end }}
 </section>
-{{- /* {{ range $index, $image := $images }}
-    {{ with .Exif.Tags }}
-
-    <div class="glightbox-desc custom-desc{{ $index }}">
-        {{ if .LensModel }}
-            {{ with .Model }}{{ . }}{{ end }}{{ with .LensModel }} &sdot; {{ . }}{{ end }}{{ with .FNumber }}<br> ƒ/{{ . }}{{ end }}{{ with .FocalLength }} &sdot; {{ . }}mm{{ end }}{{ with .ExposureTime }} &sdot; {{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
-        {{ else }}
-            {{ with .Model }}{{ . }}{{ end }}{{ with .ExposureTime }}<br>{{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
-        {{ end }}
-    </div>
-{{ end }}
-{{ end }} */ -}}
 <script>
     document.body.innerHTML += '<div id="gallery-container" class="gallery-container"><div id="image-wrapper"></div><div class="gallery-close">&times;</div></div>';
     var container = document.getElementById('gallery-container');
@@ -31,12 +19,11 @@
     });
     var thumbs = document.getElementsByClassName('gallery-thumb');
     for (var i = 0; i < thumbs.length; i++) {
-        console.log(thumbs[i])
         thumbs[i].addEventListener('click', function(event){
             event.preventDefault();
-            imageWrapper.style.backgroundImage = "url("+ this.getAttribute('href') + ")";
             container.classList.add("active");
             document.body.style.overflow = "hidden";
+            imageWrapper.style.backgroundImage = "url("+ this.getAttribute('href') + ")";
         });
     }
 </script>
