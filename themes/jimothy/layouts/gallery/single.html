@@ -14,7 +14,7 @@
         {{ end }}
     </section>
     <script>
-        document.body.innerHTML += '<div id="gallery-container"><div id="image-wrapper"></div><div class="gallery-close">&times;</div></div>';
+        document.body.innerHTML += '<div id="gallery-container"><div id="image-loader"><img alt="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}"></div><div id="image-wrapper"></div><div class="gallery-close">&times;</div></div>';
         var container = document.getElementById('gallery-container');
         var imageWrapper = document.getElementById('image-wrapper');
         container.addEventListener('click', function(){

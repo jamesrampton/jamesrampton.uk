@@ -62,7 +62,7 @@
   border-radius: 2px;
 }
 
-#image-wrapper {
+#image-wrapper, #image-loader {
   position: absolute;
   top: 0;
   right: 0;
@@ -73,22 +73,27 @@
   background-position: center;
 }
 
-
-
-// Legacy styles for reference
-.glightbox-clean {
-  .gslide-title, .gslide-desc {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #555;
-    font-weight: 300;
+#image-loader {
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
-  .gslide-title {
-    margin: 0;
-    font-weight: 500;
-    font-size: 0.9em;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  .gslide-desc {
-    font-size: 0.7em;
-    color: #BBB;
+  to {
+    transform: rotate(360deg);
   }
 }
