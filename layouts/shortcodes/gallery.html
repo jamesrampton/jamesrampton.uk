@@ -2,31 +2,24 @@
 {{ end }}
 <section class="gallery">
     {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
-    {{ range $images }}
-        {{ $thumbnail := .Fill "300x300 q100" }}
-    <div class="gallery-card" data-image="{{ .Permalink }}" >
-        <a class="gallery-thumb">
+    {{ range $index, $image := $images }}
+        {{ $thumbnail := $image.Fill "300x300 q100" }}
+        <a class="gallery-thumb" href="{{ .Permalink }}" data-glightbox="title: {{ .Title }}; description: .custom-desc{{ $index }}">
             <img src="{{ $thumbnail.Permalink }}">
         </a>
-
-    <div class="gallery-meta">
-        <p class="gallery-title">{{ .Title }}</p>
-        {{ with .Exif.Tags }}
-        <div class="gallery-description">
-            {{ if .LensModel }}
-            {{ with .Model }}{{ . }}{{ end }}{{ with .LensModel }} &sdot; {{ . }}{{ end }}{{ with .FNumber }}<br> ƒ/{{ . }}{{ end }}{{ with .FocalLength }} &sdot; {{ . }}mm{{ end }}{{ with .ExposureTime }} &sdot; {{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
-            {{ else }}
-            {{ with .Model }}{{ . }}{{ end }}{{ with .ExposureTime }}<br>{{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
-            {{ end }}
-        </div>
-        {{ end }}
-    </div>
-
-        </div>
     {{ end }}
 </section>
 {{- /* {{ range $index, $image := $images }}
+    {{ with .Exif.Tags }}
 
+    <div class="glightbox-desc custom-desc{{ $index }}">
+        {{ if .LensModel }}
+            {{ with .Model }}{{ . }}{{ end }}{{ with .LensModel }} &sdot; {{ . }}{{ end }}{{ with .FNumber }}<br> ƒ/{{ . }}{{ end }}{{ with .FocalLength }} &sdot; {{ . }}mm{{ end }}{{ with .ExposureTime }} &sdot; {{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
+        {{ else }}
+            {{ with .Model }}{{ . }}{{ end }}{{ with .ExposureTime }}<br>{{ . }}s{{ end }}{{ with .ISOSpeedRatings }} &sdot; ISO {{ . }}{{ end }}
+        {{ end }}
+    </div>
+{{ end }}
 {{ end }} */ -}}
 <script>
     document.body.innerHTML += '<div id="gallery-container" class="gallery-container"><div class="gallery-close">&times;</div><div id="image-wrapper"></div></div>';
@@ -36,11 +29,12 @@
         this.classList.remove("active");
         document.body.style.overflow = "initial";
     });
-    var thumbs = document.getElementsByClassName('gallery-card');
+    var thumbs = document.getElementsByClassName('gallery-thumb');
     for (var i = 0; i < thumbs.length; i++) {
+        console.log(thumbs[i])
         thumbs[i].addEventListener('click', function(event){
             event.preventDefault();
-            imageWrapper.style.backgroundImage = "url("+ this.dataset.image + ")";
+            imageWrapper.style.backgroundImage = "url("+ this.getAttribute('href') + ")";
             container.classList.add("active");
             document.body.style.overflow = "hidden";
         });

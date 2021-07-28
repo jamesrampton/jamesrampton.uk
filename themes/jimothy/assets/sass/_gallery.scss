@@ -2,23 +2,19 @@
   text-align: center;
 }
 
-.gallery-card {
-  display: inline-block;
-  padding: $padding;
-  margin: 10px;
-  border: 1px solid #CCC;
-  border-radius: 2px;
+.gallery-thumb {
   &:hover {
     cursor: zoom-in;
   }
 }
+
 
 #gallery-container {
   display: table-cell;
   visibility: hidden;
   vertical-align: middle;
   text-align: center;
-  background-color: black;
+  background-color: white;
   position: fixed;
   top:0;
   right:0;
@@ -44,7 +40,7 @@
   margin-right: 0.5em;
   width: 1em;
   height: 1em;
-  color: #CCC;
+  color: #555;
   position: absolute;
   top: 0;
   right: 0;
@@ -66,20 +62,19 @@
 
 
 // Legacy styles for reference
-.gallery-meta {
-  text-align: left;
-}
-.gallery-title, .gallery-description {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #555;
-  font-weight: 300;
-}
-.gallery-title {
-  margin: 0;
-  font-weight: 500;
-  font-size: 0.9em;
-}
-.gallery-description {
-  font-size: 0.7em;
-  color: #AAA;
+.glightbox-clean {
+  .gslide-title, .gslide-desc {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #555;
+    font-weight: 300;
+  }
+  .gslide-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+  .gslide-desc {
+    font-size: 0.7em;
+    color: #BBB;
+  }
 }
