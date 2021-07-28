@@ -3,8 +3,8 @@ author = "James Rampton"
 date = 2021-05-10T17:11:41Z
 description = "A test post with some common elements"
 draft = true
-featured_image = "/uploads/stags.jpg"
-featured_image_alt_text = "Stags resting in the woods"
+featured_image = "https://picsum.photos/1920/600"
+featured_image_alt_text = "An example image"
 title = "Hello, world!"
 +++
 Donec sed _odio_ dui. Praesent commodo [cursus](https://example.com) magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.
