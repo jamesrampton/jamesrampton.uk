@@ -1,10 +1,8 @@
-{{ define "extrahead" }}
-{{ end }}
 <section class="gallery">
     {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
-    {{ range $index, $image := $images }}
-        {{ $thumbnail := $image.Fill "250x250 q100" }}
-        <a class="gallery-thumb" href="{{ .Permalink }}" data-glightbox="title: {{ .Title }}; description: .custom-desc{{ $index }}">
+    {{ range $images }}
+        {{ $thumbnail := .Fill "250x250 q100" }}
+        <a class="gallery-thumb" href="{{ .Permalink }}">
             <img src="{{ $thumbnail.Permalink }}">
         </a>
     {{ end }}
