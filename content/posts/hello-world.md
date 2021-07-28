@@ -6,7 +6,6 @@ draft = true
 featured_image = "/uploads/stags.jpg"
 featured_image_alt_text = "Stags resting in the woods"
 title = "Hello, world!"
-
 +++
 Donec sed _odio_ dui. Praesent commodo [cursus](https://example.com) magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.
 
