@@ -11,6 +11,10 @@ body, html {
     grid-template-rows: auto 1fr auto;
 }
 
+body.no-overflow {
+    overflow: hidden;
+}
+
 @include headings {
     font-weight: 900;
 }
