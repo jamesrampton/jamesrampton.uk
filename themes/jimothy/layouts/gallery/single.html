@@ -1,0 +1,35 @@
+{{ define "main" }}
+<h2 class="post-title">{{ .Title }}</h2>
+<div class="post-content text-center">
+    {{ .Content }}
+    <section class="gallery">
+
+
+        {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
+        {{ range $images }}
+        {{ $thumbnail := .Fill "320x320 q100" }}
+        <a class="gallery-thumb" href="{{ .Permalink }}">
+            <img src="{{ $thumbnail.Permalink }}">
+        </a>
+        {{ end }}
+    </section>
+    <script>
+        document.body.innerHTML += '<div id="gallery-container"><div id="image-wrapper"></div><div class="gallery-close">&times;</div></div>';
+        var container = document.getElementById('gallery-container');
+        var imageWrapper = document.getElementById('image-wrapper');
+        container.addEventListener('click', function(){
+            this.classList.remove("active");
+            document.body.classList.remove('no-overflow');
+        });
+        var thumbs = document.getElementsByClassName('gallery-thumb');
+        for (var i = 0; i < thumbs.length; i++) {
+            thumbs[i].addEventListener('click', function(event){
+                event.preventDefault();
+                container.classList.add("active");
+                document.body.classList.add('no-overflow');
+                imageWrapper.style.backgroundImage = "url("+ this.getAttribute('href') + ")";
+            });
+        }
+    </script>
+</div>
+{{ end }}

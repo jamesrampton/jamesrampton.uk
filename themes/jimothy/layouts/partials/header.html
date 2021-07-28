@@ -1,1 +1,10 @@
-<header class="main-header"><!-- header goes here --></header>
+<header>
+    {{ if isset .Site.Params "avatar" }}<a class="header-logo" href="/"><img alt="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}"></a>{{ end }}
+    <nav>
+        <ul>
+            <li><a href="/photography">Photography</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+</header>

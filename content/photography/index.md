@@ -1,7 +1,8 @@
 ---
-title: "Gallery"
+title: Photography
 date: 2021-06-05T10:03:00+01:00
 draft: false
+type: gallery
 resources:
 - src: img/2119503.jpg
   title: Salute to the Sun
@@ -12,5 +13,4 @@ resources:
 - src: img/2117401.jpg
   title: Bench
 ---
-{{< gallery >}}
-
+Choose an image below for a closer look.

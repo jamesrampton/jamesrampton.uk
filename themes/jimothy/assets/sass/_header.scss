@@ -1,0 +1,35 @@
+header {
+  border-bottom: 1px solid #EEE;
+  height: 60px;
+  a {
+    border-bottom: none;
+    height: 60px;
+  }
+}
+.header-logo {
+  float: left;
+  padding-bottom: 0;
+  img {
+    height: 30px;
+    width: 30px;
+    padding: 15px;
+  }
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    float: right;
+    margin: 0;
+    font-size: 0.8em;
+    li {
+      display: inline-block;
+      padding: 15px;
+      line-height: 30px;
+      a:hover {
+        border-bottom: 2px solid #555;
+      }
+    }
+  }
+}
