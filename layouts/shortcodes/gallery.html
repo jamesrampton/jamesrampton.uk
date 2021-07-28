@@ -3,7 +3,7 @@
 <section class="gallery">
     {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
     {{ range $index, $image := $images }}
-        {{ $thumbnail := $image.Fill "300x300 q100" }}
+        {{ $thumbnail := $image.Fill "250x250 q100" }}
         <a class="gallery-thumb" href="{{ .Permalink }}" data-glightbox="title: {{ .Title }}; description: .custom-desc{{ $index }}">
             <img src="{{ $thumbnail.Permalink }}">
         </a>
@@ -22,7 +22,7 @@
 {{ end }}
 {{ end }} */ -}}
 <script>
-    document.body.innerHTML += '<div id="gallery-container" class="gallery-container"><div class="gallery-close">&times;</div><div id="image-wrapper"></div></div>';
+    document.body.innerHTML += '<div id="gallery-container" class="gallery-container"><div id="image-wrapper"></div><div class="gallery-close">&times;</div></div>';
     var container = document.getElementById('gallery-container');
     var imageWrapper = document.getElementById('image-wrapper');
     container.addEventListener('click', function(){

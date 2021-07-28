@@ -14,7 +14,7 @@
   visibility: hidden;
   vertical-align: middle;
   text-align: center;
-  background-color: white;
+  background-color: black;
   position: fixed;
   top:0;
   right:0;
@@ -40,7 +40,9 @@
   margin-right: 0.5em;
   width: 1em;
   height: 1em;
-  color: #555;
+  color: white;
+  padding: 0.5em;
+  background-color: black;
   position: absolute;
   top: 0;
   right: 0;
@@ -50,10 +52,10 @@
 
 #image-wrapper {
   position: absolute;
-  top: $padding;
-  right: $padding;
-  bottom: $padding;
-  left: $padding;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
