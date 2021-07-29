@@ -15,15 +15,17 @@ So, as my bank balance would allow, I got the 450D (or the Rebel XSi, for our No
 ### All change please 
 I thought this was the camera I'd explore for goodness knows how many years &hellip; until I saw [Vincent Laforet's Reverie](https://vimeo.com/7151244).
 
-Shot a year earlier and perfect to my mind, I had made the wrong purchase.
+Laforet had shot that film a year before I'd bought my first "proper" camera and, to my mind, it was perfect.
 
-This mind-blowing film changed everything for me and probably boosted Canon's sales no end. I thought if I could get results even a fration as good as what I was seeing on screen, I'd be on to a winner. That coupled with the fact that my band at the time was shooting music videos on my Sony camcorder or MacBook's webcam, I thought an upgrade was immediately in order. 
+I had made the wrong purchase.
+
+This mind-blowing film changed everything for me and probably boosted Canon's sales no end. I thought if I could get results even a fraction as good as what I was seeing on screen, I'd be on to a winner. That coupled with the fact that my band at the time was shooting music videos on my Sony camcorder or MacBook's webcam, I thought an upgrade was immediately in order. 
 
 I sold my 450D and lenses to a friend and bought the 5D &hellip; body only. While saving up for the 50mm ƒ1.4 (and it was a long wait), I researched other people's work, both stills and video.
 
 What really confirmed that I'd made the right decision was stumbling upon Rob Sheridan's [live recordings](https://www.youtube.com/watch?v=mWH_4UZ_mfQ) for Nine Inch Nails. Man, this was it, I was going to make excellent music videos.
 
-I soon realised that having a decent camera does not a polished product make. But my proudest work has to be the test footage I shot for a personal project. Just getting used to the camera and trying to film and "star" in a video at the same time.
+I soon realised that having a decent camera does not make a polished product. But my proudest work has to be the test footage I shot for a personal project. Just getting used to the camera and trying to film and "star" in a video at the same time.
 
 {{< vimeo 12204325 >}}
 
@@ -47,7 +49,7 @@ But the point is we're out and about and sometimes this happens:
 Yes, yes, lot's to learn again, but that's the point! It's the adventure, and it wouldn't have started (twice) without my precious 5D and the buddy system of learning with a friend.
 
 ### In the end
-Does the camera still hold up? Well, with only nine AF points, no dual-pixel AF, no in-body image stabilisation (the list goes on), it's outdated. Its megapixel count leaves me somewhat wanting, and I've got to relearn all my technique on a camera that is woefully sluggish by modern standards. But boy is it fun to be back in the game! And if you can shoot [great photos on a disposable camera](https://indoek.com/article/27-frames-scott-soens/), you can shoot with anything.
+Does the camera still hold up? Well, with only nine AF points, no dual-pixel AF, no in-body image stabilisation (the list goes on), it's outdated. Its megapixel count is somewhat wanting, and I have to relearn my whole technique on a camera that is woefully sluggish by modern standards. But, boy, is it fun to be back in the game! And if you can shoot [great photos on a disposable camera](https://indoek.com/article/27-frames-scott-soens/), you can shoot with anything.
 
 Will I upgrade? No, not yet. To many, this thing was Canon's last major, game-changing innovation, and it shows.
 
