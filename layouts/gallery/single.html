@@ -7,9 +7,10 @@
 
         {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
         {{ range $images }}
-        {{ $thumbnail := .Fill "320x320 q100" }}
+        {{ $prethumbnail := .Fill "2x2 q80" }}
+        {{ $thumbnail := .Fill "300x300 q100" }}
         <a class="gallery-thumb" href="{{ .Permalink }}">
-            <img src="{{ $thumbnail.Permalink }}">
+            <img class="lazy-image" src="{{ $prethumbnail.Permalink }}" data-src="{{ $thumbnail.Permalink }}" width="300" height="300">
         </a>
         {{ end }}
     </section>
@@ -21,6 +22,38 @@
             this.classList.remove("active");
             document.body.classList.remove('no-overflow');
         });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyloadImages = document.querySelectorAll("img.lazy-image");
+            var lazyloadThrottleTimeout;
+
+            function lazyload () {
+                if(lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }
+
+                lazyloadThrottleTimeout = setTimeout(function() {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function(img) {
+                        if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy-image');
+                        }
+                    });
+                    if(lazyloadImages.length == 0) {
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+            lazyload();
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        });
+
         var thumbs = document.getElementsByClassName('gallery-thumb');
         for (var i = 0; i < thumbs.length; i++) {
             thumbs[i].addEventListener('click', function(event){
