@@ -36,7 +36,8 @@ h1 {
 }
 
 p {
-    line-height: 1.5em
+    line-height: 1.8em;
+    font-weight: 200;
 }
 
 a, a:visited {
@@ -91,6 +92,11 @@ blockquote {
     height: 150px;
     display: block;
     margin: 50px auto;
+}
+
+hr.divider {
+    width: 50%;
+    margin: 30px auto;
 }
 
 .separator {
