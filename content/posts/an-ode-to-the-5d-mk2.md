@@ -46,7 +46,7 @@ But the point is we're out and about and sometimes this happens:
 
 ![Preening swans](/uploads/_MG_0026.jpeg)
 
-Yes, yes, lot's to learn again, but that's the point! It's the adventure, and it wouldn't have started (twice) without my precious 5D and the buddy system of learning with a friend.
+Yes, yes, lots to learn again, but that's the point! It's the adventure, and it wouldn't have started (twice) without my precious 5D and the buddy system of learning with a friend.
 
 ### In the end
 Does the camera still hold up? Well, with only nine AF points, no dual-pixel AF, no in-body image stabilisation (the list goes on), it's outdated. Its megapixel count is somewhat wanting, and I have to relearn my whole technique on a camera that is woefully sluggish by modern standards. But, boy, is it fun to be back in the game! And if you can shoot [great photos on a disposable camera](https://indoek.com/article/27-frames-scott-soens/), you can shoot with anything.
