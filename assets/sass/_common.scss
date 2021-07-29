@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 1em;
+    &.no-border {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
 }
 
 h1 {
@@ -78,11 +82,27 @@ blockquote {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 #logo {
     width: 250px;
     height: 250px;
     display: block;
-    margin: 100px auto 50px auto;
+    margin: 50px auto;
+}
+
+.separator {
+    &:before {
+        content: "|";
+    }
+    margin: 0 6px;
+}
+
+.image-credit {
+    margin: 0;
+    font-size: 0.7em;
 }
 
 .social {

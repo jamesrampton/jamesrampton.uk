@@ -25,7 +25,7 @@
     {{ $style := $sass | resources.ToCSS $options | resources.Fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
 
-    {{ $title := print .Site.Title " | " .Title }}
+    {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
 </head>

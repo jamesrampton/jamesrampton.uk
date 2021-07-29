@@ -8,7 +8,7 @@
         {{ $images := sort (.Page.Resources.Match "img/*.jpg") "Exif.Date" "desc" }}
         {{ range $images }}
         {{ $prethumbnail := .Fill "2x2 q80" }}
-        {{ $thumbnail := .Fill "300x300 q100" }}
+        {{ $thumbnail := .Fill "250x250 q100" }}
         <a class="gallery-thumb" href="{{ .Permalink }}">
             <img class="lazy-image" src="{{ $prethumbnail.Permalink }}" data-src="{{ $thumbnail.Permalink }}" width="300" height="300">
         </a>

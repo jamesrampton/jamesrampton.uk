@@ -13,4 +13,4 @@ resources:
 - src: img/2117401.jpg
   title: Bench
 ---
-Choose an image below for a closer look.
+Choose an image for a closer look.

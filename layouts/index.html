@@ -1,5 +1,7 @@
 {{ define "main" }}
+    <h2 class="no-border">James Rampton</h2>
     {{ if isset .Site.Params "avatar" }}<img id="logo" alt="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}">{{ end }}
+<p class="text-center">Coder <span class="separator"></span> Musician <span class="separator"></span> Photographer</p>
     {{ with .Site.Params.social }}
         <ul class="social">
             {{ range sort . "order" }}
