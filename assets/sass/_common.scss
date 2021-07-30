@@ -46,6 +46,9 @@ a, a:visited {
     color: #555;
     transition: border-bottom-width 0.1s linear;
     padding-bottom: 1px;
+    &.no-border {
+        border-bottom: none;
+    }
 }
 
 a:hover {
