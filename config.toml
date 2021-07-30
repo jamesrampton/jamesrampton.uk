@@ -19,10 +19,10 @@ includeFields = ".*"
     url = "//vimeo.com/jamesrampton"
 
 [[params.social]]
-    name = "Soundcloud"
-    icon = "soundcloud"
+    name = "Flickr"
+    icon = "flickr"
     order = 2
-    url = "//soundcloud.com/jamesrampton"
+    url = "//flickr.com/jamesrampton"
 
 [[params.social]]
     name = "Bandcamp"
