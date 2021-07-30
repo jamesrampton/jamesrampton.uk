@@ -3,7 +3,6 @@ title: "About"
 date: 2021-06-05T10:03:00+01:00
 draft: false
 type: normal
-featured_image: /uploads/about1.jpeg
 featured_image_alt_text: James Rampton playing bass at a gig
 featured_image_credit: Dave Parsons
 images:
