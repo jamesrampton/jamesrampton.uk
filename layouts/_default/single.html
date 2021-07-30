@@ -4,5 +4,6 @@
     <div class="post-content">
         {{ if isset .Params "featured_image" }}<p><img src="{{ .Params.featured_image }}" alt="{{ .Params.featured_image_alt_text }}"></p>{{ end }}
         {{ .Content }}
+        {{ if isset .Params "twitter_link" }}<hr><p>Respectful comments welcome on <a href="{{ .Params.twitter_link }}">Twitter</a></p>{{ end }}
     </div>
 {{ end }}
