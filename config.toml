@@ -10,8 +10,6 @@ title = "James Rampton"
 includeFields = ".*"
 
 [params]
-    avatar = "images/logo.svg?v=2"
-    page_not_found_image = "images/broken_logo.svg?v=2"
     description = "The personal website and blog of James Rampton"
 
 [[params.social]]
