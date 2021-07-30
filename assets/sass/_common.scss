@@ -83,15 +83,24 @@ blockquote {
 }
 
 #logo {
-    width: 150px;
-    height: 150px;
     display: block;
     margin: 50px auto;
+    fill: #555;
+    text-align: center;
+    svg {
+        width: 150px;
+        height: 150px;
+    }
 }
 
-hr.divider {
-    width: 50%;
+hr {
+    height: 1px;
     margin: 30px auto;
+    background-color: #EEE;
+    border: none;
+    &.divider {
+        width: 50%;
+    }
 }
 
 .separator {
@@ -127,16 +136,45 @@ hr.divider {
     font-weight: 100;
 }
 
+.fleuron {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    svg {
+        color: #EEE;
+        width: 50px;
+        height: 50px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: -60px;
+        width: 50px;
+        height: 2px;
+        background-color: #EEE;
+        display: inline-block;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        left: -60px;
+        width: 50px;
+        height: 2px;
+        background-color: #EEE;
+        display: inline-block;
+    }
+
+}
+
 .gallery, #lightbox {
     a {
         border: none;
     }
 }
 
-#copyright {
-    width: 100%;
-    text-align: center;
-    //color: #BBB;
-    font-size: 0.75em;
-    font-weight: 100;
-}
+

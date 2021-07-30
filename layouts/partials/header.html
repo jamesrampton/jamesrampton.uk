@@ -1,5 +1,5 @@
 <header>
-    {{ if isset .Site.Params "avatar" }}<a class="header-logo" href="/"><img alt="avatar" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}"></a>{{ end }}
+    <a class="header-logo" href="/">{{- partial "logo.html" }}</a>
     <nav>
         <ul>
             <li><a href="/posts">Posts</a></li><span class="separator"></span>

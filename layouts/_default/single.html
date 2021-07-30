@@ -5,10 +5,10 @@
         {{ if isset .Params "featured_image" }}<p><img src="{{ .Params.featured_image }}" alt="{{ .Params.featured_image_alt_text }}"></p>{{ end }}
         {{ .Content }}
         {{ if isset .Params "twitter_link" }}
-        <hr class="divider">
+        <div class="fleuron">{{- partial "logo.html" }}</div>
         <p class="center">
-        <a href="{{ .Params.twitter_link }}" class="no-border"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Respectful comments welcome on Twitter</span></a>
-        Respectful comments welcome on <a href="{{ .Params.twitter_link }}">Twitter</a></p>
+        <a href="{{ .Params.twitter_link }}"><i class="fa fa-twitter" aria-hidden="true"></i>
+        Respectful comments welcome on Twitter</a></p>
         {{ end }}
     </div>
 {{ end }}

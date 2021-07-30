@@ -1,4 +1,4 @@
 {{ define "main" }}
-    {{ if .Site.Params.page_not_found_image }}<img  id="logo" style="margin-bottom: 0;" alt="Page not found" src="{{ .Site.BaseURL }}{{ .Site.Params.page_not_found_image }}">{{ end }}
+    <div id="logo">{{- partial "broken_logo.html"  }}</div>
     <p class="center">I couldn't find that page. <br> Try going <a href="/">back to the home page</a></p>
 {{ end }}
