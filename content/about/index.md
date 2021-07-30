@@ -10,6 +10,8 @@ images:
 ---
 Hi, I'm James. Nice to meet you.
 
+*Pronouns: he/him/his*
+
 I'm a web developer, specialising in bespoke back-office systems and API integrations with Django.
 
 I have a background in Government communications, so I enjoy proofreading and copy editing when I need some time away from code.
@@ -26,5 +28,6 @@ Working for Government, I was Director of Photography, Camera Operator, and Voic
 
 I'll occasionally [write](/posts) here on subjects ranging from the above interests to anything else that tickles my fancy.
 
-This site was hand built with [Hugo](https://gohugo.io), if you're interested.
+---
 
+This site was hand built with [Hugo](https://gohugo.io), if you're interested.
