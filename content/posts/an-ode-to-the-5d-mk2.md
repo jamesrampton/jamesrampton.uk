@@ -4,6 +4,7 @@ date: 2021-07-29T15:00:06+01:00
 draft: false
 featured_image: "/uploads/5d2.jpeg"
 summary: "As the release of Canon's EOS R3 fast approaches, I take a look back and reignite my love for what started it all: the game-changer; the Canon EOS 5D MKII."
+twitter_link: "https://twitter.com/jamesrampton/status/1421012993656201220"
 ---
 ### In the beginning
 The year was 2010. I wanted to up my photography game from rubbish feature-phone shots to something more professional, so I consulted various photographer friends as to which camera to buy. The main question was *"APS-C or Full-frame"*. I looked at all the stats, pricing and performance, but never was there any question that I'd be getting a Canon. After all, all my friends shot Canon; I could borrow their lenses; ask them about the menu system, etc.
