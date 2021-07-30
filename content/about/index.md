@@ -6,6 +6,8 @@ type: normal
 featured_image: /uploads/about1.jpeg
 featured_image_alt_text: James Rampton playing bass at a gig
 featured_image_credit: Dave Parsons
+images:
+- /uploads/about1.jpeg
 ---
 Hi, I'm James. Nice to meet you.
 
