@@ -4,9 +4,3 @@
 
 [build.environment]
   HUGO_VERSION = "0.85.0"
-
-[[headers]]
-  for = "/*.woff"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Content-Type = "application/font-woff"
