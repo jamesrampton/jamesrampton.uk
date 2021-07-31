@@ -104,10 +104,12 @@ hr {
 }
 
 .separator {
+    font-weight: 300;
+    margin: 0 6px;
+    color: $colour_medium;
     &:before {
         content: "|";
     }
-    margin: 0 6px;
 }
 
 .image-credit {
