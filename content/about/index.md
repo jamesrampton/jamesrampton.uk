@@ -28,6 +28,4 @@ Working for Government, I was Director of Photography, Camera Operator, and Voic
 
 I'll occasionally [write](/posts) here on subjects ranging from the above interests to anything else that tickles my fancy.
 
----
-
 This site was hand built with [Hugo](https://gohugo.io), if you're interested.
