@@ -8,7 +8,7 @@
 }
 
 header {
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid $colour_light;
   height: 60px;
   a {
     border-bottom: none;
@@ -37,7 +37,7 @@ nav {
       padding: 15px 0;
       line-height: 30px;
       a:hover {
-        border-bottom: 2px solid #555;
+        border-bottom: 2px solid $colour_main;
       }
     }
   }

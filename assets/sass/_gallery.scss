@@ -26,7 +26,7 @@
   visibility: hidden;
   vertical-align: middle;
   text-align: center;
-  background-color: black;
+  background-color: $colour_dark;
   position: fixed;
   top:0;
   right:0;
@@ -34,7 +34,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  color: white;
+  color: $colour_bright;
   opacity: 0;
   transition: visibility 600ms, opacity 600ms;
   &:hover {
@@ -52,9 +52,9 @@
   margin-right: 0.5em;
   width: 1em;
   height: 1em;
-  color: white;
+  color: $colour_bright;
   padding: 0.5em;
-  background-color: black;
+  background-color: $colour_dark;
   position: absolute;
   top: 0;
   right: 0;

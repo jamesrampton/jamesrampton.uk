@@ -1,6 +1,6 @@
 * {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #555;
+    color: $colour_main;
 }
 body, html {
     font-size: 16px;
@@ -21,7 +21,7 @@ body.no-overflow {
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid $colour_light;
     margin-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 1em;
@@ -42,8 +42,8 @@ p {
 
 a, a:visited {
     text-decoration: none;
-    border-bottom: 2px solid #1565C0;
-    color: #555;
+    border-bottom: 2px solid $colour_lolight;
+    color: $colour_main;
     transition: border-bottom-width 0.1s linear;
     padding-bottom: 1px;
     &.no-border {
@@ -76,7 +76,7 @@ strong {
 }
 
 blockquote {
-    border-left: 5px solid #DDD;
+    border-left: 5px solid $colour_medium;
     margin: 1em 0;
     padding-left: 1em;
     font-weight: 500;
@@ -85,7 +85,7 @@ blockquote {
 #logo {
     display: block;
     margin: 50px auto;
-    fill: #555;
+    fill: $colour_main;
     text-align: center;
     svg {
         width: 150px;
@@ -96,7 +96,7 @@ blockquote {
 hr {
     height: 1px;
     margin: 30px auto;
-    background-color: #EEE;
+    background-color: $colour_light;
     border: none;
     &.divider {
         width: 50%;
@@ -122,7 +122,7 @@ hr {
         padding: 15px;
         list-style-type: none;
         a, a:visited {
-            color: #555;
+            color: $colour_main;
             border: none;
         }
         display: inline-block;
@@ -144,8 +144,8 @@ hr {
     width: 50px;
     height: 50px;
     svg {
-        color: #EEE;
-        fill: #EEE;
+        color: $colour_light;
+        fill: $colour_light;
         width: 50px;
         height: 50px;
     }
@@ -156,7 +156,7 @@ hr {
         right: -60px;
         width: 50px;
         height: 2px;
-        background-color: #EEE;
+        background-color: $colour_light;
         display: inline-block;
     }
     &:after {
@@ -166,7 +166,7 @@ hr {
         left: -60px;
         width: 50px;
         height: 2px;
-        background-color: #EEE;
+        background-color: $colour_light;
         display: inline-block;
     }
 
@@ -177,5 +177,3 @@ hr {
         border: none;
     }
 }
-
-
