@@ -37,14 +37,14 @@
   color: $colour_bright;
   opacity: 0;
   transition: visibility 600ms, opacity 600ms;
+  z-index: 1000;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
   &:hover {
     cursor: zoom-out;
   }
-}
-
-#gallery-container.active {
-  opacity: 1;
-  visibility: visible;
 }
 
 .gallery-close {
