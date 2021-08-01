@@ -2,10 +2,11 @@
     <a class="header-logo" href="/">{{- partial "logo.html" }}<span class="sr-only">Home page</span></a>
     <nav>
         <ul class="nav-menu">
-            <li class="nav-item"><a href="/posts">Posts</a><span class="separator"></span></li>
-            <li class="nav-item"><a href="/photography">Photography</a><span class="separator"></span></li>
-            <li class="nav-item"><a href="/about">About</a></li>
+            {{ range .Site.Menus.main }}
+                <li class="nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
         </ul>
+
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>

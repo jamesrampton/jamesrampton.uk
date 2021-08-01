@@ -40,6 +40,16 @@ nav {
       a:hover {
         border-bottom: 2px solid $colour_main;
       }
+      &:after {
+        content: "|";
+        font-weight: 300;
+        margin: 0 6px;
+        color: $colour_medium;
+      }
+      &:last-child:after {
+        content: none;
+        margin: 0;
+      }
     }
   }
   .hamburger {
@@ -99,8 +109,9 @@ nav {
         a:hover {
           border-bottom: 2px solid $colour_main;
         }
-        .separator {
-          display: none;
+        &:after {
+          content: none;
+          margin: 0;
         }
       }
     }
