@@ -63,17 +63,24 @@ nav {
   nav {
     .nav-menu {
       float: none;
-      width: 100%;
-      position: fixed;
-      transition: left 300ms;
-      left: 100%;
-      top: 60px;
+      width: auto;
+      position: absolute;
+      transition: all 300ms;
+      right: -2px;
+      opacity: 0;
+      top: 50px;
       margin: 0;
-      text-align: center;
-      background-color: $colour_light;
+      text-align: right;
+      background-color: $colour_bright;
       z-index: 100;
+      visibility: hidden;
+      border-radius: 2px;
+      border: 1px solid $colour_light;
+      padding: 15px 0 15px 15px;
       &.active {
-        left: 0;
+        top: 60px;
+        opacity: 1;
+        visibility: visible;
       }
       .nav-item {
         display: block;
@@ -89,7 +96,6 @@ nav {
     }
     .hamburger {
       display: block;
-
       &.active {
         .bar {
           &:nth-child(2) {

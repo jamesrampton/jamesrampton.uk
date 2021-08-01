@@ -28,11 +28,13 @@
         <script>
             var hamburger = document.querySelector(".hamburger");
             var navMenu = document.querySelector(".nav-menu");
+            var arrowUp = document.querySelector(".nav-arrow-up");
             hamburger.addEventListener("click", mobileMenu);
 
             function mobileMenu() {
                 hamburger.classList.toggle("active");
                 navMenu.classList.toggle("active");
+                arrowUp.classList.toggle("active");
             }
         </script>
         {{- partial "script.html" . -}}
