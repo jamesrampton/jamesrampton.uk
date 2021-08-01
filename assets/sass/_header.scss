@@ -51,10 +51,19 @@ nav {
       display: block;
       width: 20px;
       height: 2px;
-      margin: 5px auto;
+      margin: 5px 0;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       background-color: $colour_main;
+      &:nth-child(1) {
+        width: 17px;
+      }
+      &:nth-child(2) {
+        width: 12px;
+      }
+      &:nth-child(3) {
+        width: 20px;
+      }
     }
   }
 }
@@ -99,6 +108,7 @@ nav {
       display: block;
       &.active {
         .bar {
+          width: 21px;
           &:nth-child(2) {
             opacity: 0;
           }
