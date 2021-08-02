@@ -37,8 +37,10 @@ nav {
       display: inline-block;
       padding: 15px 0;
       line-height: 30px;
-      a:hover {
-        border-bottom: 2px solid $colour_main;
+      &.active {
+        a {
+          font-weight: 800;
+        }
       }
       &:after {
         content: "|";
@@ -49,6 +51,9 @@ nav {
       &:last-child:after {
         content: none;
         margin: 0;
+      }
+      a:hover {
+        border-bottom: 2px solid $colour_main;
       }
     }
   }
@@ -94,7 +99,6 @@ nav {
       background-color: $colour_bright;
       z-index: 100;
       visibility: hidden;
-      //border-top: 1px solid $colour_light;
       padding: 15px 0 15px 15px;
       &.active {
         top: 60px;
@@ -106,9 +110,11 @@ nav {
         padding: 10px;
         line-height: 1;
         font-size: 1.5em;
-        a:hover {
-          border-bottom: 2px solid $colour_main;
+        &.active {
+        a {
+          font-weight: 700;
         }
+      }
         &:after {
           content: none;
           margin: 0;

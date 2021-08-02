@@ -1,5 +1,6 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
+{{ .Content }}
     {{ range .Pages.ByPublishDate.Reverse }}
         <h3 class="no-border">{{ .Title }}</h3>
         <p class="meta">{{ partial "metadata.html" . }}</p>

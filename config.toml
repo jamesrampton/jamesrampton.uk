@@ -9,12 +9,6 @@ title = "James Rampton"
 [imaging.exif]
 includeFields = ".*"
 
-[ menu ]
-[[ menu.main]]
-    name = "Posts"
-    url = "/posts"
-    weight = 1
-
 [params]
     description = "The personal website and blog of James Rampton"
 
