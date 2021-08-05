@@ -15,7 +15,8 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "*"
+  match: "**/*"
+  exclude: posts/*
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
