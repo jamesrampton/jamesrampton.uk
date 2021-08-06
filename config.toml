@@ -2,6 +2,9 @@ baseURL = "https://www.jamesrampton.uk/"
 languageCode = "en-us"
 title = "James Rampton"
 
+[author]
+    name = "James Rampton"
+
 [markup]
     [markup.highlight]
         noClasses = false
