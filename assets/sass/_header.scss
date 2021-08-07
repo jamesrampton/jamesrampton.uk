@@ -99,7 +99,7 @@ nav {
       background-color: $colour_white;
       z-index: 100;
       visibility: hidden;
-      padding: 15px 0 15px 15px;
+      padding: 15px;
       &.active {
         top: 60px;
         opacity: 1;
@@ -123,6 +123,7 @@ nav {
     }
     .hamburger {
       display: block;
+      padding-right: 15px;
       &.active {
         .bar {
           width: 21px;
