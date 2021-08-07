@@ -1,0 +1,74 @@
+@media (prefers-color-scheme: dark) {
+  // _common.scss
+  * {
+    color: $colour_warm_light;
+  }
+
+  html, body {
+    background-color: $colour_dark;
+  }
+
+  // _typography.scss
+  @include headings {
+    border-bottom-color: $colour_warm_light_alt;
+  }
+
+  // _header.scss
+  header {
+    border-bottom: 1px solid $colour_warm_light_alt;
+  }
+
+  nav {
+    .nav-menu {
+      .nav-item {
+        &:after {
+          color: $colour_warm_light;
+        }
+        a:hover {
+          border-bottom: 2px solid $colour_hilight;
+        }
+      }
+    }
+    .hamburger {
+      .bar {
+        background-color: $colour_warm_light;
+      }
+    }
+  }
+  @media only screen and (max-width: $breakpoint_med) {
+    nav {
+      .nav-menu {
+        background-color: $colour_dark;
+      }
+    }
+  }
+
+  // _footer.scss
+  footer {
+    border-top-color: $colour_warm_light_alt;
+  }
+
+  // _shame.scss
+  a, a:visited {
+    color: $colour_warm_light;
+    border-bottom-color: $colour_hilight;
+  }
+
+  hr {
+    background-color: $colour_warm_light_alt;
+  }
+
+  .fleuron {
+    &:before, &:after {
+      background-color: $colour_warm_light_alt;
+    }
+    svg {
+      fill: $colour_warm_light_alt;
+      color: $colour_warm_light_alt;
+    }
+  }
+
+  .separator {
+    color: $colour_warm_light;
+  }
+}

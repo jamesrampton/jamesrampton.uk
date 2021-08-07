@@ -10,11 +10,15 @@ $font-height: 1.5;
 
 // colours
 $colour_main: #555555;
-$colour_bright: #FFFFFF;
+$colour_white: #FFFFFF;
 $colour_light: #EEEEEE;
+$colour_warm_light: #fbf7ea;
+$colour_warm_light_alt: rgba($colour_warm_light, 0.2);
 $colour_medium: #DDDDDD;
-$colour_dark: #000000;
+$colour_dark: #333333;
+$colour_black: #000000;
 $colour_lolight: #1565C0;
+$colour_hilight: #06C189;
 
 // box model
 $padding: 1.5em;
