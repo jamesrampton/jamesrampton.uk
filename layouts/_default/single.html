@@ -11,10 +11,10 @@
         {{ if isset .Params "twitter_link" }}
             <p class="center">
                 <a href="{{ .Params.twitter_link }}">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    Respectful comments welcome on Twitter
+                    <i class="fa fa-twitter" aria-hidden="true"></i> Respectful comments welcome on Twitter
                 </a>
             </p>
         {{ end }}
+        {{- partial "feed_link.html" . -}}
     </div>
 {{ end }}
