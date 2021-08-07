@@ -1,6 +1,18 @@
 baseURL = "https://www.jamesrampton.uk/"
 languageCode = "en-us"
 title = "James Rampton"
+rssLimit = 20
+
+[outputFormats]
+    [outputFormats.RSS]
+        baseName = "feed"
+
+[outputs]
+    page = ["HTML"]
+    home = ["HTML", "RSS"]
+    section = ["HTML"]
+    taxonomyTerm = ["HTML"]
+    taxonomy = ["HTML"]
 
 [author]
     name = "James Rampton"
