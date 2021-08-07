@@ -1,5 +1,7 @@
 {{ define "main" }}
     <div id="logo">{{- partial "broken_logo.html"  }}</div>
     <p class="center">I couldn't find that page. <br> Try going <a href="/">back to the home page</a></p>
-    <script>plausible("404",{ props: { path: document.location.pathname } });</script>
+    {{ if not .Site.Params.noSEO }}
+        <script>plausible("404",{ props: { path: document.location.pathname } });</script>
+    {{ end }}
 {{ end }}
