@@ -73,6 +73,12 @@
   background-position: center;
 }
 
+.gallery, #lightbox {
+    a {
+        border: none;
+    }
+}
+
 #image-loader {
   svg {
     position: absolute;

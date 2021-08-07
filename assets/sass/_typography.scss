@@ -1,0 +1,82 @@
+// typography
+
+@include headings {
+    font-weight: $font-weight-super-heavy;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    border-bottom: 1px solid $colour_light;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    &.no-border {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: $font-weight-light;
+  line-height: 1.8;
+}
+
+strong {
+  font-weight: $font-weight-heavy;
+}
+
+pre {
+  border-radius: 5px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 15px;
+}
+
+code * {
+  font-family: monospace, monospace;
+}
+
+blockquote {
+  border-left: 5px solid $colour_medium;
+  margin: 1em 0;
+  padding-left: 1em;
+  font-weight: $font-weight-medium;
+}
+
+.font-light {
+  font-weight: $font-weight-light;
+}
+
+.font-regular {
+  font-weight: $font-weight-regular;
+}
+
+.font-heavy {
+  font-weight: $font-weight-heavy;
+}
