@@ -6,5 +6,9 @@ menu:
   main:
     weight: 2
 type: gallery
+featured_image_alt_text: James Rampton taking a photograph
+featured_image_credit: Kevin Hornby
+images:
+- /uploads/photography1.jpg
 ---
 Choose an image for a closer look.
