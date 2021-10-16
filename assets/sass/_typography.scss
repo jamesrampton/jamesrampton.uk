@@ -1,9 +1,5 @@
 // typography
 
-@include headings {
-    font-weight: $font-weight-super-heavy;
-}
-
 h1 {
   font-size: 2.5rem;
   margin-top: 0;
@@ -30,7 +26,7 @@ h6 {
 }
 
 @include headings {
-    text-align: center;
+    font-weight: $font-weight-super-heavy;
     border-bottom: 1px solid $colour_light;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -84,3 +80,4 @@ blockquote {
 .font-heavy {
   font-weight: $font-weight-heavy;
 }
+
