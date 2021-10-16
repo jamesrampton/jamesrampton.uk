@@ -73,5 +73,8 @@
   }
   a.heading-hash {
       color: $colour_warm_light_alt;
+      &:hover {
+          color: $colour_warm_light;
+      }
   }
 }
