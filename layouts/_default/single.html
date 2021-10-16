@@ -6,7 +6,7 @@
             {{ $featured_image := index (.Params.Images) 0 }}
             <p><img src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}"></p>
         {{ end }}
-        {{ .Content }}
+        {{ partial "heading_hash.html" .Content }}
         <div class="fleuron">{{- partial "logo.html" }}</div>
         {{ if isset .Params "twitter_link" }}
             <p class="center">
