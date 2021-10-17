@@ -11,7 +11,7 @@ featured_image_alt_text: A spider in the centre of its web, covered in morning d
 images:
 - /uploads/now1.jpeg
 ---
-things
+In no particular order:
 - Learning intermediate POSIX scripting
 - Re-learning most of what I've forgotten since 2014 about vim
 - Improving my [photography]({{< relref "/photography">}}) skills
