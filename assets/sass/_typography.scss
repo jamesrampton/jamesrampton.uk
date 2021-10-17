@@ -47,6 +47,12 @@ strong {
   font-weight: $font-weight-heavy;
 }
 
+ul, ol {
+  li{
+    line-height: 1.8;
+  }
+}
+
 pre {
   border-radius: 5px;
   max-width: 100%;
