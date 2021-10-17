@@ -1,12 +1,12 @@
 ---
 title: "Now"
-date: 2021-06-05T10:03:00+01:00
+date: 2021-10-17
 draft: false
 menu:
   main:
     weight: 4
 
-type: normal
+type: now
 long_title: What I'm up to
 featured_image_alt_text: A spider in the centre of its web, covered in morning dew
 
