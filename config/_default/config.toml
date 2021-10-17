@@ -2,6 +2,7 @@ baseURL = "https://www.jamesrampton.uk/"
 languageCode = "en-us"
 title = "James Rampton"
 rssLimit = 20
+enableEmoji = true
 
 [outputFormats]
     [outputFormats.RSS]
