@@ -12,9 +12,7 @@ featured_image_credit: Dave Parsons
 images:
 - /uploads/about1.jpeg
 ---
-Hi, I'm James. Nice to meet you.
-
-*Pronouns: he/him/his*
+Hi, I'm James (he.him). Nice to meet you. {{< emoji ":wave:" >}}
 
 I'm a web developer, specialising in bespoke back-office systems and API integrations with Django.
 
@@ -26,10 +24,13 @@ I'm also a photographer and musician; you can find some of my work dotted about 
 
 My most recent sound design project was a collaboration with [Alan Jackson](https://speakersonstrings.com/wedo.html) for [Andy Baker](https://andybak.net)'s VR Kinetic Sculpture, *[Gossamer](https://andybak.net/gossamer)*. It's on display at the [Museum of Other Realities](https://www.museumor.com/artwork/gossamer). Alan and I created the soundtrack, and I assisted with the audio implementation in Unity.
 
-Working for Government, I was Director of Photography, Camera Operator, and Voice Over Recordist for a short information film on [Anti-Social Behaviour](https://www.youtube.com/watch?v=_0ADc-r4ub0).
 
 ---
 
+Here's some of what I'm up to [now](/now).
+
 I'll occasionally [write](/posts) here on subjects ranging from the above interests to anything else that tickles my fancy.
 
-This site was hand built with [Hugo](https://gohugo.io), if you're interested.
+[humans.txt](/humans.txt)
+
+
