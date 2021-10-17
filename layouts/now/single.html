@@ -1,7 +1,7 @@
 {{ define "main" }}
     <h2 class="post-title">
     {{ if isset .Params "date" }}
-        It's {{ .Lastmod.Format "January 2006" }} and I'm&hellip;
+        It's <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2006" }}</time> and I'm&hellip;
     {{ else if isset .Params "long_title" }}
         {{ .Params.long_title }}
     {{ else }}
