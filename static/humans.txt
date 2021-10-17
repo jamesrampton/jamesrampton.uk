@@ -1,0 +1,15 @@
+/* TEAM */
+    Web designer: James Rampton
+    Twitter: @jamesrampton
+    Location: London, UK
+
+
+/* THANKS */
+    Additional photography: Kevin Hornby
+
+    Additional photography: Dave Parsons
+
+/* SITE */
+    Language: EN
+    Static site generator: Hugo
+    IDE: neovim
