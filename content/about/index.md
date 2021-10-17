@@ -12,7 +12,7 @@ featured_image_credit: Dave Parsons
 images:
 - /uploads/about1.jpeg
 ---
-Hi, I'm James (he.him). Nice to meet you. {{< emoji ":wave:" >}}
+Hi, I'm James (he/him). Nice to meet you. {{< emoji ":wave:" >}}
 
 I'm a web developer, specialising in bespoke back-office systems and API integrations with Django.
 
