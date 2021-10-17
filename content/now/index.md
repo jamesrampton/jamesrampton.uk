@@ -6,7 +6,6 @@ menu:
   main:
     weight: 4
 type: now
-long_title: What I'm up to
 featured_image_alt_text: A spider in the centre of its web, covered in morning dew
 images:
 - /uploads/now1.jpeg

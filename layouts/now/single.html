@@ -1,9 +1,13 @@
 {{ define "main" }}
-    {{ if isset .Params "long_title" }}
-        <h2 class="post-title">{{ .Params.long_title }}</h2>
+    <h2 class="post-title">
+    {{ if isset .Params "date" }}
+        It's {{ .Lastmod.Format "January 2006" }} and I'm&hellip;
+    {{ else if isset .Params "long_title" }}
+        {{ .Params.long_title }}
     {{ else }}
-        <h2 class="post-title">{{ .Title }}</h2>
+        {{ .Title }}
     {{ end }}
+    </h2>
     <div class="post-content">
         {{ if isset .Params "images" }}
         {{ $featured_image := index (.Params.Images) 0 }}
@@ -11,8 +15,5 @@
         {{ end }}
         {{ if isset .Params "featured_image_credit" }}<p class="right image-credit">Image credit: {{ .Params.featured_image_credit }}{{ end }}</p>
         {{ .Content }}
-        {{ if isset .Params "date" }}
-        <p>Last updated: {{ .Lastmod.Format "January 2, 2006" }}
-        {{ end }}
     </div>
 {{ end }}
