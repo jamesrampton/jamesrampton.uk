@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
   // _common.scss
   * {
-    color: $colour_warm_light;
+    color: $colour_bright;
   }
 
   html, body {
@@ -10,19 +10,19 @@
 
   // _typography.scss
   @include headings {
-    border-bottom-color: $colour_warm_light_alt;
+    border-bottom-color: $colour_bright_alt;
   }
 
   // _header.scss
   header {
-    border-bottom: 1px solid $colour_warm_light_alt;
+    border-bottom: 1px solid $colour_bright_alt;
   }
 
   nav {
     .nav-menu {
       .nav-item {
         &:after {
-          color: $colour_warm_light;
+          color: $colour_bright;
         }
         a:hover {
           border-bottom: 2px solid $colour_hilight;
@@ -31,7 +31,7 @@
     }
     .hamburger {
       .bar {
-        background-color: $colour_warm_light;
+        background-color: $colour_bright;
       }
     }
   }
@@ -45,36 +45,36 @@
 
   // _footer.scss
   footer {
-    border-top-color: $colour_warm_light_alt;
+    border-top-color: $colour_bright_alt;
   }
 
   // _shame.scss
   a, a:visited {
-    color: $colour_warm_light;
+    color: $colour_bright;
     border-bottom-color: $colour_hilight;
   }
 
   hr {
-    background-color: $colour_warm_light_alt;
+    background-color: $colour_bright_alt;
   }
 
   .fleuron {
     &:before, &:after {
-      background-color: $colour_warm_light_alt;
+      background-color: $colour_bright_alt;
     }
     svg {
-      fill: $colour_warm_light_alt;
-      color: $colour_warm_light_alt;
+      fill: $colour_bright_alt;
+      color: $colour_bright_alt;
     }
   }
 
   .separator {
-    color: $colour_warm_light;
+    color: $colour_bright;
   }
   a.heading-hash {
-      color: $colour_warm_light_alt;
+      color: $colour_bright_alt;
       &:hover {
-          color: $colour_warm_light;
+          color: $colour_bright;
       }
   }
 }
