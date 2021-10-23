@@ -1,6 +1,6 @@
 .row .header-col {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .row .top-col {
@@ -49,8 +49,7 @@ nav {
         color: $colour_medium;
       }
       &:last-child:after {
-        content: none;
-        margin: 0;
+        content: "";
       }
       a:hover {
         border-bottom: 2px solid $colour_lolight;
