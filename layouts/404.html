@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div id="logo">{{- partial "broken_logo.html"  }}</div>
-    <p class="center">I couldn't find that page. <br> Try going <a href="/">back to the home page</a></p>
+    <p class="center">Oops! This page doesn't exist.<br>Try going <a href="/">home</a>.</p>
     {{ if not .Site.Params.noSEO }}
         <script>plausible("404",{ props: { path: document.location.pathname } });</script>
     {{ end }}
