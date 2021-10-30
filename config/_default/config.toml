@@ -23,4 +23,8 @@ enableEmoji = true
         noClasses = false
 
 [imaging.exif]
-includeFields = ".*"
+    includeFields = ".*"
+
+[taxonomies]
+    tag = "tags"
+    category = ""
