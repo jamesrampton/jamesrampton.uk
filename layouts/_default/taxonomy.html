@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+    {{ range .Pages.ByTitle }}
+    <span class="tag_link"><i class="fa fa-tag"></i><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+    {{ end }}
+    {{- partial "feed_link.html" . -}}
+{{ end }}
+

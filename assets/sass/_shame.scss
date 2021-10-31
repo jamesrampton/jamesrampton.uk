@@ -68,6 +68,21 @@ hr {
     }
 }
 
+.tag_link {
+    i {
+        color: $colour_medium;
+        padding-right: 0.5em;
+    }
+    display: inline-block;
+    margin-right: 0.5em;
+    &.tag_link--tight {
+        i {
+            padding-right: 0;
+        }
+    }
+    margin-right: 0.2em;
+}
+
 .fleuron {
     position: relative;
     display: block;

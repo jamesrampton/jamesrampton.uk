@@ -4,11 +4,13 @@
         {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
         <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
         {{ with .Params.tags }}
-        in
-        {{ range . }}
-        {{ $href := print (absURL "tags/") (urlize .) }}
-        <a href="{{ $href }}">{{ . }}</a>
-        {{ end }}
+            in
+            {{ range . }}
+            <span class="tag_link tag_link--tight"><i class="fa fa-tag"></i>
+                {{ $href := print (absURL "tags/") (urlize .) }}
+                <a href="{{ $href }}">{{ . }}</a>
+                </span>
+            {{ end }}
         {{ end }}
     </small>
 </p>
