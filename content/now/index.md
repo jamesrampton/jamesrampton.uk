@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2021-10-17
+date: 2021-11-03
 draft: false
 menu:
   main:
@@ -12,6 +12,6 @@ images:
 ---
 In no particular order:
 - Learning intermediate POSIX scripting
-- Re-learning most of what I've forgotten since 2014 about vim
+- Re-learning ~~most~~ some of what I've forgotten since 2014 about vim
 - Improving my [photography](https://flickr.com/jamesrampton) skills
 - Finding new (and hopefully fun) ways to overcome my crippling anxiety
