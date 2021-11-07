@@ -7,5 +7,12 @@
         <p>{{ .Summary }}</p>
         <hr class="divider">
     {{ end }}
-    {{- partial "feed_link.html" . -}}
+    <ul class="social">
+        <li class="social-link" >
+            <a href="/feed.xml">
+                <i class="fa fa-rss" aria-hidden="true"></i>
+                <span class="sr-only">Subscribe to the RSS feed</span>
+            </a>
+        </li>
+    </ul>
 {{ end }}

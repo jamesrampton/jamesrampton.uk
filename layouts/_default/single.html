@@ -1,20 +1,43 @@
 {{ define "main" }}
     <h2 class="post-title">{{ .Title }}</h2>
-    {{ partial "metadata.html" . }}
     <div class="post-content">
         {{ if isset .Params "images" }}
             {{ $featured_image := index (.Params.Images) 0 }}
             <p><img src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}"></p>
         {{ end }}
+        {{ partial "metadata.html" . }}
         {{ partial "heading_hash.html" .Content }}
         <div class="fleuron">{{- partial "logo.html" }}</div>
-        {{ if isset .Params "twitter_link" }}
-            <p class="center">
+        <ul class="social">
+            {{ if isset .Params "twitter_link" }}
+            <li class="social-link" >
                 <a href="{{ .Params.twitter_link }}">
-                    <i class="fa fa-twitter" aria-hidden="true"></i> Respectful comments welcome on Twitter
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Comment on Twitter</span>
                 </a>
-            </p>
-        {{ end }}
-        {{- partial "feed_link.html" . -}}
+            </li>
+            {{ end }}
+            {{ if isset .Params "mastodon_link" }}
+            <li class="social-link" >
+                <a href="{{ .Params.mastodon_link }}">
+                    <i class="fa fa-mastodon" aria-hidden="true"></i>
+                    <span class="sr-only">Comment on Mastodon</span>
+                </a>
+            </li>
+            {{ end }}
+            <li class="social-link" >
+                <a href="{{ .Site.Params.githubHistoryBaseURL }}{{ .Page.File.Path }}">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">View history on GitHub</span>
+                </a>
+            </li>
+            <li class="social-link" >
+                <a href="/feed.xml">
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+                    <span class="sr-only">Subscribe to the RSS feed</span>
+                </a>
+            </li>
+        </ul>
+
     </div>
 {{ end }}
