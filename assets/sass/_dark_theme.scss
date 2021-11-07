@@ -24,9 +24,6 @@
         &:after {
           color: $colour_bright;
         }
-        a:hover {
-          border-bottom: 2px solid $colour_hilight;
-        }
       }
     }
     .hamburger {
@@ -51,7 +48,6 @@
   // _shame.scss
   a, a:visited {
     color: $colour_bright;
-    border-bottom-color: $colour_hilight;
   }
 
   hr {
