@@ -1,0 +1,11 @@
+<li class="social-link" >
+    {{ if .icon }}
+        <a href="{{ .url }}">
+            <i class="fa fa-{{ .icon }}" aria-hidden="true"></i>
+            <span class="sr-only">{{ .link_text }}</span>
+        </a>
+    {{ else }}
+        <a href="{{ .url }}">{{ .link_text }}</a>
+    {{ end }}
+</li>
+

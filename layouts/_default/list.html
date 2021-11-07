@@ -8,11 +8,6 @@
         <hr class="divider">
     {{ end }}
     <ul class="social">
-        <li class="social-link" >
-            <a href="/feed.xml">
-                <i class="fa fa-rss" aria-hidden="true"></i>
-                <span class="sr-only">Subscribe to the RSS feed</span>
-            </a>
-        </li>
+        {{ partial "social_link" (dict "link_text" "Subscribe to the RSS feed for jamesrampton.uk" "icon" "rss"  "url" "/feed.xml" ) }}
     </ul>
 {{ end }}
