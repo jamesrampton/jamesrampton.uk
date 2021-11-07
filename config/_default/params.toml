@@ -1,5 +1,6 @@
 description = "The personal website and blog of James Rampton"
 noSEO = false
+githubHistoryBaseURL = "https://github.com/jamesrampton/jamesrampton.uk/commits/main/content/"
 
 [[social]]
     name = "Github"
