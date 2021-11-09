@@ -13,5 +13,5 @@ images:
 In no particular order:
 - Learning intermediate POSIX scripting
 - Re-learning ~~most~~ some of what I've forgotten since 2014 about vim
-- Improving my [photography](https://flickr.com/jamesrampton) skills
+- Improving my [photography](https://500px.com/p/jamesrampton) skills
 - Finding new (and hopefully fun) ways to overcome my crippling anxiety

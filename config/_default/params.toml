@@ -9,19 +9,20 @@ githubHistoryBaseURL = "https://github.com/jamesrampton/jamesrampton.uk/commits/
     url = "//github.com/jamesrampton"
 
 [[social]]
-    name = "Flickr"
-    icon = "flickr"
+    name = "Bandcamp"
+    icon = "bandcamp"
     order = 2
-    url = "//flickr.com/jamesrampton"
+    url = "//jamesrampton.bandcamp.com"
+
+[[social]]
+    name = "500px"
+    icon = "500px"
+    order = 3
+    url = "//500px.com/p/jamesrampton"
 
 [[social]]
     name = "Vimeo"
     icon = "vimeo"
-    order = 3
+    order = 4
     url = "//vimeo.com/jamesrampton"
 
-[[social]]
-    name = "Bandcamp"
-    icon = "bandcamp"
-    order = 4
-    url = "//jamesrampton.bandcamp.com"
