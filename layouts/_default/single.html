@@ -8,6 +8,7 @@
         {{ partial "metadata.html" . }}
         {{ partial "heading_hash.html" .Content }}
         <div class="fleuron">{{- partial "logo.html" }}</div>
+        <p class="center"><strong>Comment, like and subscribe...</strong></p>
         <ul class="social">
             {{ if isset .Params "twitter_link" }}
                 {{ partial "social_link" (dict "link_text" "Comment over on Twitter" "icon" "twitter"  "url" .Params.twitter_link ) }}
