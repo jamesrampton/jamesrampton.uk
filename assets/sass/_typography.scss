@@ -26,14 +26,11 @@ h6 {
 }
 
 @include headings {
-    font-weight: $font-weight-super-heavy;
-    border-bottom: 1px solid $colour_light;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
+    font-weight: $font-weight-heavy;
+    margin-top: 2em;
+    margin-bottom: 2em;
     &.no-border {
-        padding-bottom: 0;
-        border-bottom: none;
+        margin-bottom: 0;
     }
 }
 
