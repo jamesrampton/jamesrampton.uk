@@ -26,7 +26,9 @@
 <link rel="apple-touch-icon" href="/images/favicon/favicon-180.png" sizes="180x180">
 <!-- macOS -->
 <link rel="mask-icon" href="/images/favicon/pinned_icon.svg" color="#333333">
-
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 {{ $sass := resources.Get "sass/main.scss" }}
 {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
 {{ $style := $sass | resources.ToCSS $options | resources.Fingerprint }}
