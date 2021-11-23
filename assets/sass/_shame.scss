@@ -126,6 +126,9 @@ hr {
 a.heading-hash {
     color: $colour_medium;
     border-bottom: none;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
     &:hover {
         color: $colour_main;
     }
