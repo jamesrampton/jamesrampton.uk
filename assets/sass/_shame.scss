@@ -127,8 +127,8 @@ a.heading-hash {
     color: $colour_medium;
     border-bottom: none;
     display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    width: 0.8em;
+    margin-left: -0.8em;
     &:hover {
         color: $colour_main;
     }
