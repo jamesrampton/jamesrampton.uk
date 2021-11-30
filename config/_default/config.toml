@@ -20,6 +20,10 @@ enableEmoji = true
 
 [markup]
     [markup.highlight]
+        lineNoStart = 1
+        lineNos = true
+        lineNumbersInTable = true
+        tabWidth = 4
         noClasses = false
 
 [imaging.exif]

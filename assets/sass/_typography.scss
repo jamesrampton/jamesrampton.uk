@@ -50,14 +50,14 @@ ul, ol {
 }
 
 pre {
-  border-radius: 5px;
   max-width: 100%;
   overflow-x: auto;
   padding: 15px;
+  font-size: 0.8em;
 }
 
 code * {
-  font-family: monospace, monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 blockquote {
