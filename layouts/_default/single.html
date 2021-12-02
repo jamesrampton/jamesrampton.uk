@@ -6,7 +6,9 @@
             <p><img src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}"></p>
         {{ end }}
         {{ partial "metadata.html" . }}
-        {{ partial "heading_hash.html" .Content }}
+        <div class="post-body">
+            {{ partial "heading_hash.html" .Content }}
+        </div>
         <div class="fleuron">{{- partial "logo.html" }}</div>
         <p class="center"><strong>Comment, like and subscribe...</strong></p>
         <ul class="social">

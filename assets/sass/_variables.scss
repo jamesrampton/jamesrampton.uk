@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Mala;
+    src: url('../fonts/jrukfonts/mala-light-noswash.woff') format('woff');
+}
 // fonts
 $font-family: 'IBM Plex Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-post: 'Mala', serif;
 $font-weight-super-light: 100;
 $font-weight-light: 300;
 $font-weight-regular: 400;

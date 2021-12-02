@@ -83,3 +83,11 @@ blockquote {
   font-weight: $font-weight-heavy;
 }
 
+.post-body {
+    line-height: 1;
+    p, a, li, blockquote, b, strong, i, em {
+        font-family: $font-family-post;
+        font-feature-settings: "liga", "kern", "calt", "lnum";
+        font-weight: $font-weight-super-light;
+    }
+}

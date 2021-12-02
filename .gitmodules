@@ -1,0 +1,3 @@
+[submodule "static/fonts/jrukfonts"]
+	path = static/fonts/jrukfonts
+	url = git@github.com:jamesrampton/jrukfonts.git
