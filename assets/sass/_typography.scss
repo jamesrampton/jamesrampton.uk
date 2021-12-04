@@ -6,11 +6,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 3rem;
 }
 
 h4 {
@@ -26,9 +26,11 @@ h6 {
 }
 
 @include headings {
+    font-family: $font-family-all-caps;
     font-weight: $font-weight-heavy;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1;
     &.no-border {
         margin-bottom: 0;
     }
@@ -83,11 +85,13 @@ blockquote {
   font-weight: $font-weight-heavy;
 }
 
+.font-all-caps {
+  font-family: $font-family-all-caps;
+}
+
 .post-body {
-    line-height: 1;
-    p, a, li, blockquote, b, strong, i, em {
-        font-family: $font-family-post;
-        font-feature-settings: "liga", "kern", "calt", "lnum";
-        font-weight: $font-weight-super-light;
+    & > p:first-of-type::first-letter {
+        font-family: Mala;
+        font-feature-settings: "liga", "kern", "calt", "lnum", "swsh";
     }
 }

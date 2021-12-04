@@ -1,8 +1,9 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
     {{ .Content }}
-    {{ range .Pages.ByTitle }}
-    <span class="tag_link"><i class="fa fa-tag"></i><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+    {{ $len := (len .Pages.ByTitle) }}
+    {{ range $index, $page := .Pages.ByTitle }}
+        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>{{ if ne (add $index 1) $len }}, {{ end }}
     {{ end }}
 {{ end }}
 

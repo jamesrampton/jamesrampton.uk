@@ -16,6 +16,7 @@ a:hover {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 
 #logo {
@@ -124,14 +125,23 @@ hr {
 }
 
 a.heading-hash {
+    font-family: font-family-all-caps;
     color: $colour_medium;
     border-bottom: none;
-    display: inline-block;
+    display: none;
     width: 0.8em;
     margin-left: -0.8em;
     &:hover {
         color: $colour_main;
     }
+    @media only screen and (min-width: $breakpoint-small) {
+        display: inline-block;
+    }
+}
+
+.post-list-title {
+    font-size: 2em;
+    line-height: 1.25;
 }
 
 .chroma {

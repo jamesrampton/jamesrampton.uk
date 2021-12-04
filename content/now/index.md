@@ -9,6 +9,7 @@ type: now
 featured_image_alt_text: A spider in the centre of its web, covered in morning dew
 images:
 - /uploads/now1.jpeg
+long_title: "What I’m doing now"
 ---
 In no particular order:
 - Learning intermediate POSIX scripting

@@ -1,10 +1,18 @@
 @font-face {
-    font-family: Mala;
+    font-family: "Mala noswash";
     src: url('../fonts/jrukfonts/mala-light-noswash.woff') format('woff');
 }
+@font-face {
+    font-family: 'Mala';
+    src: url('../fonts/jrukfonts/mala-light-v100.woff') format('woff');
+}
+@font-face {
+    font-family: 'Oskar';
+    src: url('../fonts/jrukfonts/OskarTEST-TwoBold.woff') format('woff');
+}
 // fonts
-$font-family: 'IBM Plex Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-family-post: 'Mala', serif;
+$font-family: 'Mala noswash', serif;
+$font-family-all-caps: Oskar, sans-serif;
 $font-weight-super-light: 100;
 $font-weight-light: 300;
 $font-weight-regular: 400;
