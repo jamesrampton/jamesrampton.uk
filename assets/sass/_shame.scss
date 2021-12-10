@@ -1,16 +1,17 @@
 a, a:visited {
-    text-decoration: none;
-    border-bottom: 2px solid $colour_accent;
+    text-decoration: underline;
+    text-decoration-color: $colour_accent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
     color: $colour_main;
-    transition: border-bottom-width 0.1s linear;
-    padding-bottom: 2px;
+    transition: background-color 0.2s linear;
     &.no-border {
         border-bottom: none;
     }
 }
 
 a:hover {
-    border-bottom-width: .2em;
+    background-color: rgba($colour_accent, 0.2);
 }
 
 img {
@@ -65,7 +66,9 @@ hr {
         padding: 15px;
         list-style-type: none;
         a, a:visited {
-            border: none;
+            &:hover {
+                background-color: transparent;
+            }
         }
         display: inline-block;
         i {
@@ -127,12 +130,14 @@ hr {
 a.heading-hash {
     font-family: $font-family-all-caps;
     color: $colour_medium;
-    border-bottom: none;
+    text-decoration: none;
     display: none;
     width: 0.8em;
     margin-left: -0.8em;
+    transition: color 0.2s linear;
     &:hover {
         color: $colour_main;
+        background-color: transparent;
     }
     @media only screen and (min-width: $breakpoint-small) {
         display: inline-block;

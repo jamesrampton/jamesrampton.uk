@@ -48,6 +48,10 @@
   // _shame.scss
   a, a:visited {
     color: $colour_bright;
+    text-decoration-color: $colour_accent_alt;
+    &:hover {
+        background-color: rgba($colour_accent_alt, 0.2);
+    }
   }
 
   hr {
