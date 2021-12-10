@@ -1,28 +1,28 @@
 // typography
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3em;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2em;
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 h6 {
-  font-size: 0.875rem;
+  font-size: 0.875em;
 }
 
 @include headings {
