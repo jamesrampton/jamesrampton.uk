@@ -1,8 +1,6 @@
 <p class="font-super-light">
     <small>
-        {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-        {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-        <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+        <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "Monday" }} the {{ .PublishDate.Format "2" | humanize }} of {{ .PublishDate.Format "January" }} {{ .PublishDate.Format "2006" }}</time>
         {{ with .Params.tags }}
         {{ $len := (len .) }}
             in
