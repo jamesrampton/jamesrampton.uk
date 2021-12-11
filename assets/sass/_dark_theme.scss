@@ -1,5 +1,8 @@
 @media (prefers-color-scheme: dark) {
   // _common.scss
+  ::selection {
+      background-color: rgba($colour_accent_alt, 0.2);
+  }
   * {
     color: $colour_bright;
   }

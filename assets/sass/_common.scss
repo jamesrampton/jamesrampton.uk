@@ -1,3 +1,7 @@
+::selection {
+    background-color: rgba($colour_accent, 0.2);
+}
+
 body {
     font-family: $font-family;
     font-feature-settings: "liga", "kern", "calt", "onum";
