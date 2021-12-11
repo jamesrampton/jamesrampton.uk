@@ -1,9 +1,11 @@
 {{ define "main" }}
-    {{ if isset .Params "long_title" }}
-        <h2>{{ .Params.long_title }}</h2>
-    {{ else }}
-        <h2>{{ .Title }}</h2>
-    {{ end }}
+    <h1>
+        {{ if isset .Params "long_title" }}
+            {{ .Params.long_title }}
+        {{ else }}
+            {{ .Title }}
+        {{ end }}
+    </h1>
     <div class="post-content">
         {{ if isset .Params "images" }}
         {{ $featured_image := index (.Params.Images) 0 }}
