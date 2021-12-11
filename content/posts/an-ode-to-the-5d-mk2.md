@@ -58,6 +58,6 @@ Does the camera still hold up? Well, with only nine AF points, no dual-pixel AF,
 
 Will I upgrade? No, not yet. To many, this thing was Canon's last major, game-changing innovation, and it shows.
 
-I'm going to stick with it until it gives up on me (or if I need to replace my incredibly soft Tamron 75-200mm with a first-party lens – the [Canon Cripple Hammer](https://www.youtube.com/watch?v=4cBIccL7pfg) is real).
+I'm going to stick with it until it gives up on me (or if I need to replace my incredibly soft Tamron 75-250mm with a first-party lens – the [Canon Cripple Hammer](https://www.youtube.com/watch?v=4cBIccL7pfg) is real).
 
 'Til then, here's to the gear that changed everything and long may it live.
