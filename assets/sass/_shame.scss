@@ -14,6 +14,10 @@ a:hover {
     background-color: rgba($colour_accent, 0.2);
 }
 
+ul {
+    list-style-type: "›   ";
+}
+
 img {
     max-width: 100%;
     height: auto;
