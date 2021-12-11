@@ -1,8 +1,8 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
     {{ range .Pages.ByPublishDate.Reverse }}
-        <h3 class="no-border post-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <h2 class="no-border post-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p class="font-super-light">{{ partial "metadata.html" . }}</p>
         <p>{{ .Summary }}</p>
         <hr class="divider">

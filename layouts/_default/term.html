@@ -1,10 +1,9 @@
 {{ define "main" }}
-    <h2>Posts in {{ .Title }}</h2>
+    <h1>Posts <br><small>in {{ .Title }}</small></h1>
     {{ .Content }}
     {{ range .Pages.ByPublishDate.Reverse }}
         <h3 class="no-border post-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <p class="font-super-light">{{ partial "metadata.html" . }}</p>
-        <p>{{ .Summary }}</p>
+        {{ partial "metadata.html" . }}
         <hr class="divider">
     {{ end }}
 {{ end }}
