@@ -10,8 +10,6 @@ body {
     padding: 0;
     left: 0;
     top: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
     background: linear-gradient(90deg, rgba(229,0,0,1) 0%, rgba(229,0,0,1) 20%, rgba(255,141,0,1) 20%, rgba(255,141,0,1) 40%, rgba(255,238,0,1) 40%, rgba(255,238,0,1) 60%, rgba(2,129,33,1) 60%, rgba(2,129,33,1) 80%, rgba(0,76,255,1) 80%, rgba(0,76,255,1) 100%, rgba(119,0,136,1) 100%);
     background-repeat:no-repeat;
     background-size:100% 2px;
