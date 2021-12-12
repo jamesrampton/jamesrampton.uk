@@ -4,7 +4,7 @@ date: 2021-07-29T15:00:06+01:00
 draft: false
 featured_image_alt_text: The Canon EOS 5D MKII attached to a tripod
 images:
-- /uploads/5d2.jpeg
+- ./5d2.jpeg
 summary: "As the release of Canon's EOS R3 fast approaches, I take a look back and reignite my love for what started it all: the game-changer; the Canon EOS 5D MKII."
 tags: ["photography"]
 twitter_link: "https://twitter.com/jamesrampton/status/1421012993656201220"
@@ -45,11 +45,11 @@ Together, my Uncle and I have been to a few locations relearning how to shoot, g
 
 Getting that perfect light is difficult when conditions turn out like this:
 
-![Windscreen in the rain](/uploads/_MG_0051.jpeg)
+![Windscreen in the rain](./_MG_0051.jpeg)
 
 But the point is we're out and about and sometimes this happens:
 
-![Preening swans](/uploads/_MG_0026.jpeg)
+![Preening swans](./_MG_0026.jpeg)
 
 Yes, yes, lots to learn again, but that's the point! It's the adventure, and it wouldn't have started (twice) without my precious 5D and the buddy system of learning with a friend.
 
@@ -58,6 +58,6 @@ Does the camera still hold up? Well, with only nine AF points, no dual-pixel AF,
 
 Will I upgrade? No, not yet. To many, this thing was Canon's last major, game-changing innovation, and it shows.
 
-I'm going to stick with it until it gives up on me (or if I need to replace my incredibly soft Tamron 75-250mm with a first-party lens – the [Canon Cripple Hammer](https://www.youtube.com/watch?v=4cBIccL7pfg) is real).
+I'm going to stick with it until it gives up on me ~~(or if I need to replace my incredibly soft Tamron 75-250mm with a first-party lens – the [Canon Cripple Hammer](https://www.youtube.com/watch?v=4cBIccL7pfg) is real)~~. *Turns out I'm terrible at sticking to my decisions and I've replaced both of my original lenses with Canon glass.*
 
 'Til then, here's to the gear that changed everything and long may it live.

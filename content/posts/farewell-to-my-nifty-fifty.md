@@ -3,7 +3,7 @@ title: "Farewell to My Nifty Fifty"
 date: 2021-12-11T20:00:28Z
 draft: false
 images:
-- /uploads/50mm.jpg
+- ./50mm.jpg
 summary: "50mm has oftentimes been a challenging focal length for me. Turns out fate agrees that it's time for a change. While my now busted lens lies dormant, I review what made it great and what led me to its replacement."
 tags: ["photography"]
 ---
@@ -18,14 +18,14 @@ This would have been a terrible thing if I wasn't already considering reneging o
 
 In most situations where I can use my feet to compose, 50 is fab; a great all-round focal length.
 
-{{< figure src="/uploads/_MG_0029.jpg" alt="A hand holding some bright red tomatoes" caption="This is the sort of thing I think 50mm is perfect for" >}}
+{{< figure src="./_MG_0029.jpg" alt="A hand holding some bright red tomatoes" caption="This is the sort of thing I think 50mm is perfect for" >}}
 
 But shoot anything vaguely in the distance or in closer quarters and it's either too wide to get anything meaningful or too long to get enough in.
 
 
 I've found myself reaching for my only other lens, the Tamron 75-250mm ƒ3.8-4.5 more and more. This is especially true for landscapes that benefit from a longer throw to focus in on details rather than get a sweeping, yet boring hillside. The Tamron was a gift from a good friend of mine many years ago, and it's been a great lens to experiment with for getting those more intimate shots of hard-to-reach things. It has two big problems though: it weighs as much as the rest of my camera gear combined (well, a lot anyway), and its images are incredibly soft. Getting critical focus on the subject is impossible, which is a great shame because it's given me many new perspectives on shots and I love having that extra reach.
 
-{{< figure src="/uploads/_MG_0047.jpg" alt="Sunset over Shirley Hills with construction work in the foreground" caption="Higher resolutions reveal quite a lot of chromatic abberation and softness in general" >}}
+{{< figure src="./_MG_0047.jpg" alt="Sunset over Shirley Hills with construction work in the foreground" caption="Higher resolutions reveal quite a lot of chromatic abberation and softness in general" >}}
 
 So without a (sharp) telephoto or wide lens to cover a greater range of subjects, I'd been getting increasingly frustrated with the one tool I did have.
 
@@ -45,9 +45,9 @@ Despite the quirks, our day out in the Surrey Hills was magical. Regardless of t
 
 I hope these few picks from the session are a fitting send off to a fine, if frustrating lens.
 
-![Sunset over Box Hill](/uploads/_MG_0023.jpg)
-![A path through the woods](/uploads/_MG_0047_1.jpg)
-![Yellow leaves](/uploads/_MG_0108.jpg)
-![Light shining through trees](/uploads/_MG_0184.jpg)
-![A low-hanging branch with yellow leaves](/uploads/_MG_0290.jpg)
-![A bench and tree with views from Leith Hill](/uploads/_MG_0271.jpg)
+![Sunset over Box Hill](./_MG_0023.jpg)
+![A path through the woods](./_MG_0047_1.jpg)
+![Yellow leaves](./_MG_0108.jpg)
+![Light shining through trees](./_MG_0184.jpg)
+![A low-hanging branch with yellow leaves](./_MG_0290.jpg)
+![A bench and tree with views from Leith Hill](./_MG_0271.jpg)
