@@ -5,9 +5,9 @@
 
 
 /* THANKS */
+    Avatar Photography: Alex Dawes
     Additional photography: Kevin Hornby
 
-    Additional photography: Dave Parsons
 
 /* SITE */
     Language: EN
