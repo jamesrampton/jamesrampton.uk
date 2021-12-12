@@ -8,9 +8,9 @@ menu:
 
 type: normal
 featured_image_alt_text: James Rampton playing bass at a gig
-featured_image_credit: Dave Parsons
+featured_image_credit: Kevin Hornby
 images:
-- /uploads/about1.jpeg
+- /uploads/photography1.jpg
 ---
 Hi, I'm James (he/him). Nice to meet you. {{< emoji ":wave:" >}}
 
