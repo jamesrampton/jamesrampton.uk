@@ -3,7 +3,7 @@ title: "Farewell to My Nifty Fifty"
 date: 2021-12-11T20:00:28Z
 draft: false
 images:
-- ./50mm.jpg
+- /posts/farewell-to-my-nifty-fifty/50mm.jpg
 summary: "50mm has oftentimes been a challenging focal length for me. Turns out fate agrees that it's time for a change. While my now busted lens lies dormant, I review what made it great and what led me to its replacement."
 tags: ["photography"]
 ---

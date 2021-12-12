@@ -4,7 +4,7 @@ date: 2021-07-29T15:00:06+01:00
 draft: false
 featured_image_alt_text: The Canon EOS 5D MKII attached to a tripod
 images:
-- ./5d2.jpeg
+- /posts/an-ode-to-the-5d-mk2/5d2.jpeg
 summary: "As the release of Canon's EOS R3 fast approaches, I take a look back and reignite my love for what started it all: the game-changer; the Canon EOS 5D MKII."
 tags: ["photography"]
 twitter_link: "https://twitter.com/jamesrampton/status/1421012993656201220"
