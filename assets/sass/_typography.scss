@@ -94,3 +94,10 @@ blockquote {
         font-feature-settings: "liga", "kern", "calt", "lnum", "swsh";
     }
 }
+@media only screen and (min-width: $breakpoint-small) {
+    h1 {
+        font-size: 4em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
