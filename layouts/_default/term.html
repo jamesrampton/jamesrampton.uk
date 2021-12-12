@@ -3,7 +3,7 @@
     {{ .Content }}
     {{ range .Pages.ByPublishDate.Reverse }}
         <h3 class="no-border post-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        {{ partial "metadata.html" . }}
+        {{ partial "metadata.html" (dict "context" . "showTags" false) }}
         <hr class="divider">
     {{ end }}
 {{ end }}

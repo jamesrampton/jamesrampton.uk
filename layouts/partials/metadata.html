@@ -1,12 +1,14 @@
 <p class="font-super-light">
     <small>
-        <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "Monday" }} the {{ .PublishDate.Format "2" | humanize }} of {{ .PublishDate.Format "January" }} {{ .PublishDate.Format "2006" }}</time>
-        {{ with .Params.tags }}
-        {{ $len := (len .) }}
-            in
-            {{ range $index, $tag := . }}
-                {{ $href := print (absURL "tags/") (urlize $tag) }}
-                <a href="{{ $href }}">{{ $tag }}</a>{{ if ne (add $index 1) $len }}, {{ end }}
+        <time datetime="{{ .context.PublishDate.Format "2006-01-02" }}">{{ .context.PublishDate.Format "Monday" }} the {{ .context.PublishDate.Format "2" | humanize }} of {{ .context.PublishDate.Format "January" }} {{ .context.PublishDate.Format "2006" }}</time>
+        {{ if .showTags }}
+            {{ with .context.Params.tags }}
+            {{ $len := (len .) }}
+                in
+                {{ range $index, $tag := . }}
+                    {{ $href := print (absURL "tags/") (urlize $tag) }}
+                    <a href="{{ $href }}">{{ $tag }}</a>{{ if ne (add $index 1) $len }}, {{ end }}
+                {{ end }}
             {{ end }}
         {{ end }}
     </small>
