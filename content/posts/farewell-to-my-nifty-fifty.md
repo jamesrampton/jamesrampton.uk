@@ -7,6 +7,7 @@ images:
 summary: "50mm has oftentimes been a challenging focal length for me. Turns out fate agrees that it's time for a change. While my now busted lens lies dormant, I review what made it great and what led me to its replacement."
 tags: ["photography"]
 twitter_link: "https://twitter.com/jamesrampton/status/1469982384024084484"
+mastodon_link: "https://mastodon.social/web/statuses/107433601264806098"
 ---
 My trusty EF 50mm ƒ1.4 lens has been through a fair bit since I bought it more than a decade ago. It's been [out in the snow](https://www.youtube.com/watch?v=ook_NS71Onw), [suction-cupped to the side of a car](https://vimeo.com/36597958) and generally in various situations unsuitable for a non-weather-sealed lens. But the worst thing I've ever put it through was dropping it in the passport office. Right on the front element. With the camera attached. On to a hard floor.
 
