@@ -1,6 +1,7 @@
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- $siteLink := .Permalink -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content">
   <channel>
     <title>jamesrampton.uk</title>
     <link>{{ .Permalink }}</link>
@@ -10,7 +11,7 @@
     <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
     <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
     <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    <lastBuildDate>{{ .Site.LastChange.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" -}}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end -}}
@@ -22,7 +23,12 @@
           <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
           {{ with .Site.Author.name }}<author>{{.}}</author>{{end}}
           <guid>{{ .Permalink }}</guid>
-          <description>{{ printf "<p>" | html }}{{ .Summary | html }} {{ printf "</p><hr>" | html }}{{ .Content | html }} {{ printf "<hr><p><strong>First published on <a href=%q>www.jamesrampton.uk</a></strong></p>" .Permalink | html }}</description>
+          {{ if isset .Params "images" }}
+          {{ $featured_image := index (.Params.Images) 0 }}
+          <media:content type="image/jpeg" medium="image" url="{{ $siteLink | replaceRE "/$" "" }}{{ $featured_image | safeHTML }}" />
+          {{ end }}
+          <description>{{ chomp "<![CDATA[\n" }}{{ .Summary | html }}{{ chomp "]]>\n" }}</description>
+          <content:encoded>{{ chomp "<![CDATA[\n" }}{{ .Content | html }} {{ printf "<hr><p><strong>First published on <a href=%q>www.jamesrampton.uk</a></strong></p>" .Permalink | html }}{{ chomp "]]>\n" }}</content:encoded>
       </item>
       {{ end }}
     {{ end }}
