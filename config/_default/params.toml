@@ -26,3 +26,8 @@ githubHistoryBaseURL = "https://github.com/jamesrampton/jamesrampton.uk/commits/
     order = 4
     url = "//vimeo.com/jamesrampton"
 
+[[social]]
+    name = "RSS"
+    icon = "rss"
+    order = 5
+    url = "/feed.xml"

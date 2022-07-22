@@ -14,6 +14,5 @@
         {{ if isset .Params "featured_image_credit" }}<p class="right image-credit">Image credit: {{ .Params.featured_image_credit }}{{ end }}</p>
         {{ .Content }}
         Last updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" }}</time>
-        <div class="fleuron">{{- partial "logo.html" }}</div>
     </div>
 {{ end }}

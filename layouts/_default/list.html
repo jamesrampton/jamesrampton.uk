@@ -5,9 +5,5 @@
         <h2 class="no-border post-list-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         {{ partial "metadata.html" (dict "context" . "showTags" true) }}
         <p>{{ .Summary }}</p>
-        <hr class="divider">
     {{ end }}
-    <ul class="social">
-        {{ partial "social_link" (dict "link_text" "Subscribe to the RSS feed for jamesrampton.uk" "icon" "rss"  "url" "/feed.xml" ) }}
-    </ul>
 {{ end }}

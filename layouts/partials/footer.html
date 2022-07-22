@@ -1,5 +1,5 @@
 <footer>
-    <p id="copyright" class="font-all-caps">copyright {{ now.Format "2006"}} James Rampton</p>
+    <div class="fleuron">{{- partial "logo.html" }}</div>
     {{ with .Site.Params.social }}
         <ul class="social">
             {{ range sort . "order" }}
@@ -7,4 +7,5 @@
             {{ end }}
         </ul>
     {{ end }}
+    <p id="copyright" class="font-all-caps">copyright {{ now.Format "2006"}} James Rampton</p>
 </footer>

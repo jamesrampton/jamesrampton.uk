@@ -9,19 +9,5 @@
         <div class="post-body">
             {{ partial "heading_hash.html" .Content }}
         </div>
-        <div class="fleuron">{{- partial "logo.html" }}</div>
-        <p class="center font-all-caps">Talk about this post</p>
-        <ul class="social">
-            {{ if isset .Params "twitter_link" }}
-                {{ partial "social_link" (dict "link_text" "Comment over on Twitter" "icon" "twitter"  "url" .Params.twitter_link ) }}
-            {{ end }}
-            {{ if isset .Params "mastodon_link" }}
-                {{ partial "social_link" (dict "link_text" "Comment over on Mastodon" "icon" "mastodon"  "url" .Params.mastodon_link ) }}
-            {{ end }}
-            {{ with $gitHubLink := printf "%s%s" .Site.Params.githubHistoryBaseURL .Page.File.Path }}
-                {{ partial "social_link" (dict "link_text" "View history on GitHub" "icon" "github"  "url" $gitHubLink ) }}
-            {{ end }}
-            {{ partial "social_link" (dict "link_text" "Subscribe to the RSS feed for jamesrampton.uk" "icon" "rss"  "url" "/feed.xml" ) }}
-        </ul>
     </div>
 {{ end }}
