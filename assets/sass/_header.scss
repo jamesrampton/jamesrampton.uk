@@ -14,6 +14,13 @@ header {
     text-decoration: none;
     height: 60px;
   }
+  .nav-title {
+    font-size: 1em;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
 }
 .header-logo {
   float: left;
@@ -24,7 +31,7 @@ header {
     padding: 15px;
   }
   &:hover {
-      background-color: transparent;
+    background-color: transparent;
   }
 }
 
@@ -110,10 +117,10 @@ nav {
         line-height: 1;
         font-size: 1.5em;
         &.active {
-        a {
-          font-weight: 700;
+          a {
+            font-weight: 700;
+          }
         }
-      }
         &:after {
           content: none;
           margin: 0;

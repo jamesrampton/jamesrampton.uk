@@ -1,15 +1,12 @@
 {{ define "main" }}
-    <h1 class="no-border center">James Rampton</h1>
     <div id="logo">
         <img src="/images/jr_avatar.jpg" alt="A portrait of James Rampton against a plain yellow background. James is wearing short hair and a back and white striped t-shirt.">
     </div>
-    <p class="center">I make software, music and images. Sometimes all at once.</p>
-    {{ with .Site.Params.social }}
-        <ul class="social">
-            {{ range sort . "order" }}
-                {{ partial "social_link" (dict "link_text" .name "icon" .icon  "url" .url ) }}
-            {{ end }}
-        </ul>
+    <h1 class="no-border">James Rampton</h1>
+    <p>I make software, music and images. Sometimes all at once.</p>
+    <h2 class="font-heavy">Latest posts</h2>
+    {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+        <p class="no-border font-base-size font-heavy"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
     {{ end }}
-    <div class="fleuron">{{- partial "logo.html" }}</div>
+    <p class="font-all-caps font-heavy"><a href="/posts/">More</a></p>
 {{ end }}

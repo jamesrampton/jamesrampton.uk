@@ -1,3 +1,10 @@
 <footer>
     <p id="copyright" class="font-all-caps">copyright {{ now.Format "2006"}} James Rampton</p>
+    {{ with .Site.Params.social }}
+        <ul class="social">
+            {{ range sort . "order" }}
+                {{ partial "social_link" (dict "link_text" .name "icon" .icon  "url" .url ) }}
+            {{ end }}
+        </ul>
+    {{ end }}
 </footer>
