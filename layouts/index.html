@@ -6,7 +6,7 @@
     <p>I make software, music and images. Sometimes all at once.</p>
     <h2 class="font-heavy">Latest posts</h2>
     {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
-        <p class="no-border font-base-size font-heavy"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+        <p class="no-border font-base-size"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
     {{ end }}
     <p class="font-all-caps font-heavy"><a href="/posts/">More</a></p>
 {{ end }}
