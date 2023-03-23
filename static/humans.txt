@@ -12,4 +12,4 @@
 /* SITE */
     Language: EN
     Static site generator: Hugo
-    IDE: neovim
+    IDE: helix (https://helix-editor.com/)
