@@ -12,6 +12,6 @@ images:
 long_title: "What I’m doing now"
 ---
 In no particular order:
-- Constantly fiddling with my qmk layout for my ferris sweep
+- Constantly fiddling with my qmk layout for my [ferris sweep](https://shop.beekeeb.com/product/pre-soldered-ferris-sweep-low-profile-split-keyboard/)
 - Porting my personal recipe book site to rust and [axum](https://github.com/tokio-rs/axum)
 - Placating my  watch (barely)
