@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2021-11-03
+date: 2023-03-23
 draft: false
 menu:
   main:
@@ -12,7 +12,6 @@ images:
 long_title: "What I’m doing now"
 ---
 In no particular order:
-- Learning intermediate POSIX scripting
-- Re-learning ~~most~~ some of what I've forgotten since 2014 about vim
-- Improving my [photography](https://500px.com/p/jamesrampton) skills
-- Finding new (and hopefully fun) ways to overcome my crippling anxiety
+- Constantly fiddling with my qmk layout for my ferris sweep
+- Porting my personal recipe book site to rust and [axum](https://github.com/tokio-rs/axum)
+- Placating my  watch (barely)
