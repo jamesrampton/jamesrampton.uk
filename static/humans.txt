@@ -1,6 +1,6 @@
 /* TEAM */
     Web designer: James Rampton
-    Twitter: @jamesrampton
+    Mastodon: @james@jhr.social
     Location: London, UK
 
 
