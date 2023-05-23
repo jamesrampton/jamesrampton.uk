@@ -3,31 +3,38 @@ noSEO = false
 githubHistoryBaseURL = "https://github.com/jamesrampton/jamesrampton.uk/commits/main/content/"
 
 [[social]]
-    name = "Github"
-    icon = "github"
-    order = 1
-    url = "//github.com/jamesrampton"
+name = "Github"
+icon = "github"
+order = 1
+url = "//github.com/jamesrampton"
 
 [[social]]
-    name = "Bandcamp"
-    icon = "bandcamp"
-    order = 2
-    url = "//jamesrampton.bandcamp.com"
+name = "Mastodon"
+icon = "mastodon"
+order = 2
+url = "//jhr.social/@james"
 
 [[social]]
-    name = "500px"
-    icon = "500px"
-    order = 3
-    url = "//500px.com/p/jamesrampton"
+name = "Bandcamp"
+icon = "bandcamp"
+order = 3
+url = "//jamesrampton.bandcamp.com"
 
 [[social]]
-    name = "Vimeo"
-    icon = "vimeo"
-    order = 4
-    url = "//vimeo.com/jamesrampton"
+name = "500px"
+icon = "500px"
+order = 4
+url = "//500px.com/p/jamesrampton"
 
 [[social]]
-    name = "RSS"
-    icon = "rss"
-    order = 5
-    url = "/feed.xml"
+name = "Vimeo"
+icon = "vimeo"
+order = 5
+url = "//vimeo.com/jamesrampton"
+
+
+[[social]]
+name = "RSS"
+icon = "rss"
+order = 6
+url = "/feed.xml"
