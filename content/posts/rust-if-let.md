@@ -4,7 +4,6 @@ date: 2023-04-16T06:50:48+01:00
 draft: false
 summary: "rust's `if let` syntax is not so confusing"
 tags: ["programming", "rust"]
-mastodon_link: "https://mastodon.social/@jamesrampton/110207353366084608"
 ---
 Take this example of rust's `if let` syntax:
 ```rust
