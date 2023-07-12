@@ -11,7 +11,7 @@
         {{ $featured_image := index (.Params.Images) 0 }}
         <img src="{{ $featured_image }}" alt="{{ .Params.featured_image_alt_text }}">
         {{ end }}
-        {{ if isset .Params "featured_image_credit" }}<p class="right image-credit">Image credit: {{ .Params.featured_image_credit }}{{ end }}</p>
+        {{ if isset .Params "featured_image_credit" }}<p class="right image-credit">Image credit: {{ .Params.featured_image_credit }}</p>{{ end }}
         {{ .Content }}
     </div>
 {{ end }}
