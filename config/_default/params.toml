@@ -15,25 +15,6 @@ order = 2
 url = "https://jhr.social/@james"
 
 [[social]]
-name = "Bandcamp"
-icon = "bandcamp"
-order = 3
-url = "https://jamesrampton.bandcamp.com"
-
-[[social]]
-name = "500px"
-icon = "500px"
-order = 4
-url = "https://500px.com/p/jamesrampton"
-
-[[social]]
-name = "Vimeo"
-icon = "vimeo"
-order = 5
-url = "https://vimeo.com/jamesrampton"
-
-
-[[social]]
 name = "RSS"
 icon = "rss"
 order = 6
