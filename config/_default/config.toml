@@ -12,7 +12,6 @@ enableEmoji = true
     page = ["HTML"]
     home = ["HTML", "RSS"]
     section = ["HTML"]
-    taxonomyTerm = ["HTML"]
     taxonomy = ["HTML"]
 
 [author]
