@@ -2,7 +2,7 @@
 title: "Piping files into helix with nushell"
 date: 2024-01-19T11:40:50+00:00
 draft: false
-summary: "rust's `if let` syntax is not so confusing"
+summary: "nushell, nusyntax"
 tags: ["programming", "shell", "tips"]
 ---
 
