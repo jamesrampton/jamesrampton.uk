@@ -1,40 +1,48 @@
 @font-face {
-    font-family: "Mala_noswash";
-    src: url('../fonts/jrukfonts/Mala-Light-noswash.eot');
-    src: url('../fonts/jrukfonts/Mala-Light-noswash.woff') format('woff');
-    src: url('../fonts/jrukfonts/Mala-Light-noswash.woff2') format('woff2');
+  font-family: "Mala_noswash";
+  src: url('../fonts/jrukfonts/Mala-Light-noswash.eot');
+  src: url('../fonts/jrukfonts/Mala-Light-noswash.woff') format('woff');
+  src: url('../fonts/jrukfonts/Mala-Light-noswash.woff2') format('woff2');
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Mala';
-    src: url('../fonts/jrukfonts/mala-light-v100.eot');
-    src: url('../fonts/jrukfonts/mala-light-v100.woff') format('woff');
-    src: url('../fonts/jrukfonts/mala-light-v100.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Mala';
+  src: url('../fonts/jrukfonts/mala-light-v100.eot');
+  src: url('../fonts/jrukfonts/mala-light-v100.woff') format('woff');
+  src: url('../fonts/jrukfonts/mala-light-v100.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Oskar';
-    src: url('../fonts/jrukfonts/Oskar-TwoLight.eot');
-    src: url('../fonts/jrukfonts/Oskar-TwoLight.woff') format('woff');
-    src: url('../fonts/jrukfonts/Oskar-TwoLight.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Oskar';
+  src: url('../fonts/jrukfonts/Oskar-TwoLight.eot');
+  src: url('../fonts/jrukfonts/Oskar-TwoLight.woff') format('woff');
+  src: url('../fonts/jrukfonts/Oskar-TwoLight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Oskar';
-    src: url('../fonts/jrukfonts/Oskar-TwoBold.eot');
-    src: url('../fonts/jrukfonts/Oskar-TwoBold.woff') format('woff');
-    src: url('../fonts/jrukfonts/Oskar-TwoBold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Oskar';
+  src: url('../fonts/jrukfonts/Oskar-TwoBold.eot');
+  src: url('../fonts/jrukfonts/Oskar-TwoBold.woff') format('woff');
+  src: url('../fonts/jrukfonts/Oskar-TwoBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-    font-family: 'Silka';
-    src: url('../fonts/jrukfonts/silkamono-regular-webfont.eot');
-    src: url('../fonts/jrukfonts/silkamono-regular-webfont.woff2') format('woff2');
-    // font-weight: normal;
-    // font-style: normal;
+  font-family: 'Silka';
+  src: url('../fonts/jrukfonts/silkamono-regular-webfont.eot');
+  src: url('../fonts/jrukfonts/silkamono-regular-webfont.woff2') format('woff2');
+  font-display: swap;
 }
+
 // fonts
 $font-family: Mala_noswash, serif;
 $font-family-swash: Mala, serif;
