@@ -8,5 +8,5 @@
     {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
         <p class="no-border font-base-size"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
     {{ end }}
-    <p class="font-all-caps font-heavy"><a href="/posts/">More</a></p>
+    <p class="font-all-caps font-heavy"><a href="/posts/">View all posts</a></p>
 {{ end }}
