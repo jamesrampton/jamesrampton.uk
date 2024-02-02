@@ -26,6 +26,7 @@
 <link rel="apple-touch-icon" href="/images/favicon/favicon-180.png" sizes="180x180">
 <!-- macOS -->
 <link rel="mask-icon" href="/images/favicon/pinned_icon.svg" color="#333333">
+<link rel="stylesheet" type="text/css" href="/fonts/jrukfonts/ml.css">
 {{ $sass := resources.Get "sass/main.scss" }}
 {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
 {{ $style := $sass | resources.ToCSS $options | resources.Fingerprint }}
