@@ -1,13 +1,16 @@
 @media (prefers-color-scheme: dark) {
+
   // _common.scss
   ::selection {
-      background-color: rgba($colour_accent_alt, 0.2);
+    background-color: rgba($colour_accent_alt, 0.2);
   }
-  * {
+
+  body {
     color: $colour_bright;
   }
 
-  html, body {
+  html,
+  body {
     background-color: $colour_dark;
   }
 
@@ -29,12 +32,14 @@
         }
       }
     }
+
     .hamburger {
       .bar {
         background-color: $colour_bright;
       }
     }
   }
+
   @media only screen and (max-width: $breakpoint_med) {
     nav {
       .nav-menu {
@@ -49,11 +54,13 @@
   }
 
   // _shame.scss
-  a, a:visited {
+  a,
+  a:visited {
     color: $colour_bright;
     text-decoration-color: $colour_accent_alt;
+
     &:hover {
-        background-color: rgba($colour_accent_alt, 0.2);
+      background-color: rgba($colour_accent_alt, 0.2);
     }
   }
 
@@ -62,9 +69,12 @@
   }
 
   .fleuron {
-    &:before, &:after {
+
+    &:before,
+    &:after {
       background-color: $colour_bright_alt;
     }
+
     svg {
       fill: $colour_bright_alt;
       color: $colour_bright_alt;
@@ -74,10 +84,12 @@
   .separator {
     color: $colour_bright;
   }
+
   a.heading-hash {
-      color: $colour_bright_alt;
-      &:hover {
-          color: $colour_bright;
-      }
+    color: $colour_bright_alt;
+
+    &:hover {
+      color: $colour_bright;
+    }
   }
 }
