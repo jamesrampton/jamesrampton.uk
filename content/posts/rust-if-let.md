@@ -24,9 +24,9 @@ With that in mind, let's recap on what destructuring is:
 ```rust
 fn main() {
     let (x, y, z) = my_tuple_fn();
-    println!("{}", x);
-    println!("{}", y);
-    println!("{}", z);
+    println!("{x}");
+    println!("{y}");
+    println!("{z}");
 }
 
 fn my_tuple_fn() -> (i32, i32, i32) {
