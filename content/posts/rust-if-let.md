@@ -8,7 +8,7 @@ tags: ["programming", "rust"]
 Take this example of rust's `if let` syntax:
 ```rust
 if let Some(x) = my_fn() {
-  println!("{}", x);
+  println!("{x}");
 }
 ```
 Many explanations I've seen of this go something like:
@@ -41,7 +41,7 @@ Now imagine we want to do something like this (it won't compile):
 ```rust
 fn main() {
     let Some(x) = my_option_fn();
-    println!("{}", x);
+    println!("{x}");
 }
 
 fn my_option_fn() -> Option<i32> {
