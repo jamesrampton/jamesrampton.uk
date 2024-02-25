@@ -1,11 +1,11 @@
 ---
-title: "Learning Point: if let in rust"
+title: "Learning Point: if let in Rust"
 date: 2023-04-16T06:50:48+01:00
 draft: false
-summary: "rust's `if let` syntax is not so confusing"
+summary: "Rust's `if let` syntax is not so confusing"
 tags: ["programming", "rust"]
 ---
-Take this example of rust's `if let` syntax:
+Take this example of Rust's `if let` syntax:
 ```rust
 if let Some(x) = my_fn() {
   println!("{x}");
