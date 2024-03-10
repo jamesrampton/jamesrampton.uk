@@ -1,0 +1,8 @@
+# /etc/caddy/Caddyfile
+www.jamesrampton.uk {
+        root * /var/www/html
+        file_server
+}
+jamesrampton.uk, http://jamesrampton.uk {
+        redir https://www.jamesrampton.uk{uri}
+}
